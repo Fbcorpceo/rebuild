@@ -22,7 +22,7 @@ const config: Config = {
         sans: ["ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial"],
       },
       boxShadow: {
-        card: "0 10px 30px -12px rgba(2, 132, 199, 0.25)",
+        card: "0 10px 30px -12px rgba(30, 77, 171, 0.25)",
       },
     },
   },

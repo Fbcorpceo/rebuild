@@ -1,12 +1,25 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { site } from "@/lib/site";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 export const alt = `${site.brand} — ${site.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
+async function loadLogoDataUri(): Promise<string | null> {
+  try {
+    const buf = await readFile(path.join(process.cwd(), "public", "logo.png"));
+    return `data:image/png;base64,${buf.toString("base64")}`;
+  } catch {
+    return null;
+  }
+}
+
 export default async function OG() {
+  const logo = await loadLogoDataUri();
+
   return new ImageResponse(
     (
       <div
@@ -22,24 +35,31 @@ export default async function OG() {
           fontFamily: "system-ui, sans-serif",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
-          <Crane />
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <div style={{ fontSize: 72, fontWeight: 900, letterSpacing: -2, lineHeight: 1 }}>
-              FB CORP
+        <div style={{ display: "flex", alignItems: "center", gap: 24 }}>
+          {logo ? (
+            <div
+              style={{
+                display: "flex",
+                background: "#ffffff",
+                padding: "22px 32px",
+                borderRadius: 18,
+                boxShadow: "0 6px 20px rgba(0,0,0,0.2)",
+              }}
+            >
+              {/* eslint-disable-next-line jsx-a11y/alt-text */}
+              <img src={logo} width={340} height={78} style={{ display: "block" }} />
             </div>
-            <div style={{ fontSize: 22, fontWeight: 600, opacity: 0.85, marginTop: 6 }}>
-              {site.productLine.toUpperCase()}
-            </div>
-          </div>
+          ) : (
+            <div style={{ fontSize: 64, fontWeight: 900, letterSpacing: -2 }}>FB CORP</div>
+          )}
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-          <div style={{ fontSize: 64, fontWeight: 800, lineHeight: 1.05, maxWidth: 980 }}>
-            Roofing, HVAC & Plumbing rebuilds across {site.primaryCity}.
+          <div style={{ fontSize: 68, fontWeight: 800, lineHeight: 1.05, maxWidth: 980 }}>
+            {`Roofing, HVAC & Plumbing rebuilds across ${site.primaryCity}.`}
           </div>
-          <div style={{ fontSize: 28, fontWeight: 500, opacity: 0.9 }}>
-            Free 24-hour quote · Licensed & insured · 4.9★ on Google
+          <div style={{ fontSize: 28, fontWeight: 500, opacity: 0.92 }}>
+            {"Free 24-hour quote · Licensed & insured · Rated 4.9/5 on Google"}
           </div>
         </div>
 
@@ -48,7 +68,7 @@ export default async function OG() {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
-            fontSize: 22,
+            fontSize: 24,
             fontWeight: 600,
             opacity: 0.95,
             borderTop: "2px solid rgba(255,255,255,0.25)",
@@ -61,23 +81,5 @@ export default async function OG() {
       </div>
     ),
     { ...size },
-  );
-}
-
-function Crane() {
-  return (
-    <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-      <rect x="6" y="14" width="100" height="10" fill="#ffffff" />
-      <rect x="6" y="24" width="14" height="68" fill="#ffffff" />
-      <g stroke="#ffffff" strokeWidth="3">
-        <line x1="20" y1="14" x2="36" y2="24" />
-        <line x1="36" y1="14" x2="52" y2="24" />
-        <line x1="52" y1="14" x2="68" y2="24" />
-        <line x1="68" y1="14" x2="84" y2="24" />
-        <line x1="84" y1="14" x2="100" y2="24" />
-      </g>
-      <rect x="76" y="24" width="3" height="44" fill="#ffffff" />
-      <circle cx="77" cy="76" r="9" fill="none" stroke="#ffffff" strokeWidth="3" />
-    </svg>
   );
 }
