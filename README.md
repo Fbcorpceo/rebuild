@@ -1,6 +1,6 @@
-# FBC Rebuild — Lead Capture Funnel
+# FB Corp — Lead Capture Funnel
 
-Production-ready lead-gen site for **fbcrebuild.com**. Each service gets its own
+Production-ready lead-gen site for **www.fbcorp.io**. Each service gets its own
 landing page optimized for local Google traffic, with a fast qualification form
 that triggers immediate follow-up automation (customer email, customer SMS,
 internal dispatch alert, and a CRM webhook).

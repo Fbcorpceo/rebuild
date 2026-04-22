@@ -148,7 +148,7 @@ export const services: Service[] = [
     faqs: [
       { q: "Do you handle insurance claims?", a: "Yes — we document damage, meet the adjuster, and only charge your deductible on approved claims." },
       { q: "How long does a replacement take?", a: "Most single-family homes: one day. Larger or steeper roofs: two." },
-      { q: "Are you licensed and insured?", a: "CSLB License #1098432 (C-39 Roofing). $2M general liability and full workers' comp on every crew." },
+      { q: "Are you licensed and insured?", a: "CSLB License #1068191 (C-39 Roofing). $2M general liability and full workers' comp on every crew." },
     ],
     trustBadges: ["Licensed & Insured", "GAF Master Elite", "BBB A+", "4.9★ on Google (412 reviews)"],
     localKeywords: ["roofer near me", "roof repair {{city}}", "storm damage roofer", "insurance claim roofing"],
@@ -315,10 +315,10 @@ export const services: Service[] = [
     ],
     faqs: [
       { q: "Is the trip charge really free?", a: "When you approve any repair, yes. We'll tell you the total before we turn a wrench." },
-      { q: "Are you licensed?", a: "California C-36 Plumbing Contractor License #1098432. $1M liability." },
+      { q: "Are you licensed?", a: "California C-36 Plumbing Contractor License #1068191. $1M liability." },
       { q: "Financing?", a: "0% for 18 months on approved credit for jobs over $1,000." },
     ],
-    trustBadges: ["CSLB C-36 #1098432", "24/7 Dispatch", "BBB A+", "4.8★ on Google (196 reviews)"],
+    trustBadges: ["CSLB C-36 #1068191", "24/7 Dispatch", "BBB A+", "4.8★ on Google (196 reviews)"],
     localKeywords: ["plumber near me", "emergency plumber {{city}}", "water heater repair", "24/7 plumber"],
   },
 ];

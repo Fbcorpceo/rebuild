@@ -1,19 +1,13 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
+import BrandLogo from "./BrandLogo";
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-slate-100 bg-white/85 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
         <Link href="/" className="flex items-center gap-3" aria-label={`${site.brand} home`}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/logo.svg"
-            alt={`${site.brand} logo`}
-            width={132}
-            height={30}
-            className="h-7 w-auto"
-          />
+          <BrandLogo height={32} />
           <span className="hidden text-sm font-semibold text-slate-500 sm:inline">
             {site.productLine}
           </span>

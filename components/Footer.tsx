@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
+import BrandLogo from "./BrandLogo";
 
 export default function Footer() {
   return (
     <footer className="mt-16 border-t border-slate-100 bg-slate-50">
       <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 text-sm sm:grid-cols-4">
         <div>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.svg" alt={`${site.brand} logo`} className="mb-3 h-7 w-auto" />
+          <div className="mb-3"><BrandLogo height={28} /></div>
           <p className="text-slate-600">{site.tagline}</p>
           <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-brand-700">{site.productLine}</p>
           <p className="mt-3 text-slate-600">
