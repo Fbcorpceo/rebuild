@@ -103,16 +103,16 @@ export const services: Service[] = [
     reviews: [
       {
         author: "Sarah K.",
-        city: "Round Rock, TX",
+        city: "Pasadena, CA",
         rating: 5,
         body:
-          "Hail took out half the neighborhood. They had a tarp on my roof the same afternoon and walked the insurance adjuster through every item. Replacement looked better than the original.",
+          "Windstorm took out half my shingles. They had a tarp on my roof the same afternoon and walked the insurance adjuster through every item. Replacement looked better than the original.",
         source: "Google",
         date: "2026-02-14",
       },
       {
         author: "Marcus D.",
-        city: "Pflugerville, TX",
+        city: "Long Beach, CA",
         rating: 5,
         body:
           "Three other companies wanted to sell me a full replacement. These guys found the actual leak in 10 minutes and fixed it for $600. Honest people.",
@@ -121,7 +121,7 @@ export const services: Service[] = [
       },
       {
         author: "Lena P.",
-        city: "Cedar Park, TX",
+        city: "Glendale, CA",
         rating: 5,
         body: "Fixed-price quote up front, crew showed up on time, cleaned every nail off my driveway with a magnet.",
         source: "Yelp",
@@ -132,7 +132,7 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=900&q=70",
         alt: "New architectural shingle roof installed on a ranch home",
-        caption: "Full tear-off & replacement — Cedar Park",
+        caption: "Full tear-off & replacement — Pasadena",
       },
       {
         src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=70",
@@ -148,7 +148,7 @@ export const services: Service[] = [
     faqs: [
       { q: "Do you handle insurance claims?", a: "Yes — we document damage, meet the adjuster, and only charge your deductible on approved claims." },
       { q: "How long does a replacement take?", a: "Most single-family homes: one day. Larger or steeper roofs: two." },
-      { q: "Are you licensed and insured?", a: "TX License #RCC-0488213. $2M general liability and full workers' comp on every crew." },
+      { q: "Are you licensed and insured?", a: "CSLB License #1098432 (C-39 Roofing). $2M general liability and full workers' comp on every crew." },
     ],
     trustBadges: ["Licensed & Insured", "GAF Master Elite", "BBB A+", "4.9★ on Google (412 reviews)"],
     localKeywords: ["roofer near me", "roof repair {{city}}", "storm damage roofer", "insurance claim roofing"],
@@ -195,7 +195,7 @@ export const services: Service[] = [
     reviews: [
       {
         author: "Jerome T.",
-        city: "Austin, TX",
+        city: "Los Angeles, CA",
         rating: 5,
         body: "Called at 7am when the AC quit. Tech was at my door by 10, had a new capacitor installed by 10:30. $189 flat. No upsell nonsense.",
         source: "Google",
@@ -203,7 +203,7 @@ export const services: Service[] = [
       },
       {
         author: "Priya S.",
-        city: "Leander, TX",
+        city: "Burbank, CA",
         rating: 5,
         body: "Replaced our 18-year-old unit. Three quotes, theirs was the middle price but the only one that itemized everything. Crew was spotless.",
         source: "Google",
@@ -211,7 +211,7 @@ export const services: Service[] = [
       },
       {
         author: "Evan M.",
-        city: "Georgetown, TX",
+        city: "Santa Monica, CA",
         rating: 5,
         body: "Tech talked me out of a $4,200 repair and showed me a $240 fix. I'll call them forever.",
         source: "Facebook",
@@ -222,7 +222,7 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=70",
         alt: "New condenser unit installed beside home",
-        caption: "16 SEER condenser install — Leander",
+        caption: "16 SEER condenser install — Burbank",
       },
       {
         src: "https://images.unsplash.com/photo-1635048424329-a9bfb146d7aa?auto=format&fit=crop&w=900&q=70",
@@ -273,7 +273,7 @@ export const services: Service[] = [
     reviews: [
       {
         author: "Angela R.",
-        city: "Austin, TX",
+        city: "Los Angeles, CA",
         rating: 5,
         body: "Midnight pipe burst. On the phone in 90 seconds, plumber in the driveway in 40 minutes. Cut a precise hole, fixed the copper, insured the drywall patch. Lifesavers.",
         source: "Google",
@@ -281,7 +281,7 @@ export const services: Service[] = [
       },
       {
         author: "Dan W.",
-        city: "Kyle, TX",
+        city: "Torrance, CA",
         rating: 5,
         body: "Replaced a 40-gallon tank with a tankless. Came in $800 under the other quote, finished in a day, left the garage cleaner than they found it.",
         source: "Google",
@@ -289,7 +289,7 @@ export const services: Service[] = [
       },
       {
         author: "Maya F.",
-        city: "Buda, TX",
+        city: "Inglewood, CA",
         rating: 5,
         body: "Cleared a main line clog that two other companies quoted $2k+ for. Theirs was $480 and worked.",
         source: "Yelp",
@@ -300,12 +300,12 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=70",
         alt: "Plumber repairing copper supply lines under sink",
-        caption: "Slab leak re-route — Austin",
+        caption: "Slab leak re-route — Los Angeles",
       },
       {
         src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=70",
         alt: "New tankless water heater on garage wall",
-        caption: "Navien tankless install — Kyle",
+        caption: "Navien tankless install — Torrance",
       },
       {
         src: "https://images.unsplash.com/photo-1591588582259-e675bd2e6088?auto=format&fit=crop&w=900&q=70",
@@ -315,10 +315,10 @@ export const services: Service[] = [
     ],
     faqs: [
       { q: "Is the trip charge really free?", a: "When you approve any repair, yes. We'll tell you the total before we turn a wrench." },
-      { q: "Are you licensed?", a: "Texas Master Plumber License #M-40112. $1M liability." },
+      { q: "Are you licensed?", a: "California C-36 Plumbing Contractor License #1098432. $1M liability." },
       { q: "Financing?", a: "0% for 18 months on approved credit for jobs over $1,000." },
     ],
-    trustBadges: ["Master Plumber #M-40112", "24/7 Dispatch", "BBB A+", "4.8★ on Google (196 reviews)"],
+    trustBadges: ["CSLB C-36 #1098432", "24/7 Dispatch", "BBB A+", "4.8★ on Google (196 reviews)"],
     localKeywords: ["plumber near me", "emergency plumber {{city}}", "water heater repair", "24/7 plumber"],
   },
 ];

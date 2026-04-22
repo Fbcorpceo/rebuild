@@ -26,7 +26,7 @@ export default function Footer() {
         <div>
           <div className="mb-2 font-semibold text-slate-900">Service area</div>
           <ul className="space-y-1 text-slate-600">
-            {site.serviceAreas.slice(0, 6).map((c) => <li key={c}>{c}, TX</li>)}
+            {site.serviceAreas.slice(0, 6).map((c) => <li key={c}>{c}, CA</li>)}
           </ul>
         </div>
         <div>

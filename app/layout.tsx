@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     url: site.url,
     title: `${site.brand} — ${site.tagline}`,
     description: site.description,
-    images: ["/og.jpg"],
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },

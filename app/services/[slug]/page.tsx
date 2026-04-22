@@ -29,7 +29,6 @@ export function generateMetadata({ params }: Params): Metadata {
       title,
       description: desc,
       url: `${site.url}${canonical}`,
-      images: [service.heroImage],
     },
     keywords: service.localKeywords.map((k) => k.replaceAll("{{city}}", site.primaryCity)),
   };
@@ -54,7 +53,7 @@ export default function ServicePage({ params }: Params) {
         </p>
         <ul className="mt-5 flex flex-wrap gap-2">
           {site.serviceAreas.map((c) => (
-            <li key={c} className="chip">{c}, TX</li>
+            <li key={c} className="chip">{c}, CA</li>
           ))}
         </ul>
       </section>

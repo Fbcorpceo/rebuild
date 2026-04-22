@@ -13,7 +13,7 @@ export default function LocalSchema({ service }: Props) {
     url: site.url,
     telephone: site.phone,
     email: site.email,
-    image: `${site.url}/og.jpg`,
+    image: `${site.url}/opengraph-image`,
     logo: `${site.url}/logo.svg`,
     priceRange: "$$",
     address: {
