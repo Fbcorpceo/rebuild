@@ -14,7 +14,7 @@ export default function LocalSchema({ service }: Props) {
     telephone: site.phone,
     email: site.email,
     image: `${site.url}/og.jpg`,
-    logo: `${site.url}/logo.png`,
+    logo: `${site.url}/logo.svg`,
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",

@@ -15,7 +15,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-5 py-16">
         <span className="chip">Local · Licensed · {site.ratings.google.stars}★ ({site.ratings.google.count})</span>
         <h1 className="mt-4 max-w-3xl text-5xl font-black leading-tight tracking-tight text-slate-900">
-          {site.brand} — {site.primaryCity}'s rebuild crew for roofs, AC, and plumbing.
+          {site.brand} Rebuild — {site.primaryCity}'s crew for roofs, AC, and plumbing.
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-slate-700">{site.description}</p>
         <div className="mt-6 flex flex-wrap gap-3">

@@ -1,11 +1,12 @@
 export const site = {
-  brand: "FBC Rebuild",
-  legalName: "FBC Rebuild, LLC",
+  brand: "FB Corp",
+  legalName: "FB Corp, LLC",
+  productLine: "FBC Rebuild",
   domain: "fbcrebuild.com",
   url: "https://fbcrebuild.com",
   tagline: "Storm restoration & home rebuild specialists.",
   description:
-    "FBC Rebuild is a licensed, local restoration contractor handling roofing, HVAC, and plumbing rebuilds across Central Texas. Free inspections, insurance-claim help, fixed-price quotes.",
+    "FB Corp is a licensed, local restoration contractor handling roofing, HVAC, and plumbing rebuilds across Central Texas. Free inspections, insurance-claim help, fixed-price quotes.",
   phone: "+1-512-555-0199",
   phoneDisplay: "(512) 555-0199",
   email: "hello@fbcrebuild.com",

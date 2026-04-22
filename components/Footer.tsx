@@ -6,8 +6,10 @@ export default function Footer() {
     <footer className="mt-16 border-t border-slate-100 bg-slate-50">
       <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 text-sm sm:grid-cols-4">
         <div>
-          <div className="mb-2 font-bold text-slate-900">{site.brand}</div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.svg" alt={`${site.brand} logo`} className="mb-3 h-7 w-auto" />
           <p className="text-slate-600">{site.tagline}</p>
+          <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-brand-700">{site.productLine}</p>
           <p className="mt-3 text-slate-600">
             {site.address.street}<br />
             {site.address.city}, {site.address.region} {site.address.postalCode}

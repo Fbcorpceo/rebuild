@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 88" role="img" aria-label="FB Corp">
+  <title>FB Corp</title>
+  <g fill="#1e4dab">
+    <!-- Crane arm -->
+    <path d="M4 8 L 220 8 L 220 20 L 4 20 Z" />
+    <path d="M 4 20 L 220 20 L 210 28 L 14 28 Z" />
+    <!-- Crane mast -->
+    <rect x="10" y="20" width="10" height="40" />
+    <!-- Diagonal trusses -->
+    <g stroke="#1e4dab" stroke-width="3">
+      <line x1="20" y1="20" x2="40" y2="28" />
+      <line x1="40" y1="20" x2="60" y2="28" />
+      <line x1="60" y1="20" x2="80" y2="28" />
+      <line x1="80" y1="20" x2="100" y2="28" />
+      <line x1="100" y1="20" x2="120" y2="28" />
+      <line x1="120" y1="20" x2="140" y2="28" />
+      <line x1="140" y1="20" x2="160" y2="28" />
+      <line x1="160" y1="20" x2="180" y2="28" />
+      <line x1="180" y1="20" x2="200" y2="28" />
+    </g>
+    <!-- Hook line -->
+    <rect x="165" y="28" width="2" height="22" />
+    <circle cx="166" cy="56" r="6" fill="none" stroke="#1e4dab" stroke-width="3" />
+    <path d="M162 62 q4 8 8 0" fill="none" stroke="#1e4dab" stroke-width="3" />
+  </g>
+  <!-- Wordmark -->
+  <text x="4" y="82"
+    font-family="Impact, 'Arial Black', ui-sans-serif, system-ui, sans-serif"
+    font-size="62" font-weight="900" letter-spacing="-1" fill="#1e4dab">FB CORP</text>
+</svg>

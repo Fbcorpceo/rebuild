@@ -3,11 +3,20 @@ import { site } from "@/lib/site";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-100 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-slate-100 bg-white/85 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
-        <Link href="/" className="flex items-center gap-2 font-bold text-slate-900">
-          <span className="inline-block h-8 w-8 rounded-lg bg-brand-600 text-center leading-8 text-white">F</span>
-          <span>{site.brand}</span>
+        <Link href="/" className="flex items-center gap-3" aria-label={`${site.brand} home`}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.svg"
+            alt={`${site.brand} logo`}
+            width={132}
+            height={30}
+            className="h-7 w-auto"
+          />
+          <span className="hidden text-sm font-semibold text-slate-500 sm:inline">
+            {site.productLine}
+          </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm sm:flex">
           <Link href="/services/roofing" className="text-slate-700 hover:text-slate-900">Roofing</Link>
