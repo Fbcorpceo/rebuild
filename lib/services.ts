@@ -1060,3 +1060,36 @@ export const services: Service[] = [
 
 export const getService = (slug: string) => services.find((s) => s.slug === slug);
 export const listServiceSlugs = () => services.map((s) => s.slug);
+
+export const featuredReviews: Review[] = [
+  {
+    author: "Zara Gemilyan",
+    city: "Los Angeles, CA",
+    rating: 5,
+    body:
+      "I had an excellent experience working with Foundational Builders. They delivered exactly as promised — on time, efficient, and highly professional. A special mention to Drew, the owner and main contractor, who was incredibly helpful and responsive throughout the process. His hands-on approach made the entire experience stress-free.",
+    source: "Google",
+    date: "2025-08-18",
+    verified: true,
+  },
+  {
+    author: "Mauricio De Leon",
+    city: "Pasadena, CA",
+    rating: 5,
+    body:
+      "We did a kitchen remodel in Pasadena and had a great experience. Everything stayed on time, which we really appreciated. The design guidance made it easier to choose the right finishes. The whole process felt smooth and stress-free.",
+    source: "Google",
+    date: "2025-11-12",
+    verified: true,
+  },
+  {
+    author: "Natalie Golovkova",
+    city: "Sherman Oaks, CA",
+    rating: 5,
+    body:
+      "We renovated our home in Sherman Oaks and the project was handled very professionally. Drew kept everything organized and on track from start to finish. The job site ran efficiently and communication was clear. Foundational Builders made it easy.",
+    source: "Google",
+    date: "2025-09-22",
+    verified: true,
+  },
+];
