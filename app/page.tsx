@@ -1,8 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { site } from "@/lib/site";
-import { services, featuredReviews, type Service } from "@/lib/services";
+import { services, featuredReviews, generalInquiryService, type Service } from "@/lib/services";
 import Reviews from "@/components/Reviews";
+import QualificationForm from "@/components/QualificationForm";
 
 export const metadata: Metadata = {
   title: `${site.brand} · Roofing, HVAC, Plumbing & General Contracting in ${site.primaryCity}`,
@@ -35,15 +36,20 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="mx-auto max-w-6xl px-5 py-16">
-        <span className="chip">Local · Licensed · {site.ratings.google.stars}★ ({site.ratings.google.count})</span>
-        <h1 className="mt-4 max-w-3xl text-5xl font-black leading-tight tracking-tight text-slate-900">
-          {site.brand}, {site.primaryCity}'s crew for everything from the roof to the remodel.
-        </h1>
-        <p className="mt-4 max-w-2xl text-lg text-slate-700">{site.description}</p>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <a href={`tel:${site.phone}`} className="btn-primary">Call {site.phoneDisplay}</a>
-          <Link href="#services" className="btn-ghost">Pick your service →</Link>
+      <section className="mx-auto grid max-w-6xl gap-10 px-5 py-12 lg:grid-cols-2 lg:py-16">
+        <div>
+          <span className="chip">Local · Licensed · {site.ratings.google.stars}★ ({site.ratings.google.count})</span>
+          <h1 className="mt-4 text-5xl font-black leading-tight tracking-tight text-slate-900">
+            {site.brand}, {site.primaryCity}'s crew for everything from the roof to the remodel.
+          </h1>
+          <p className="mt-4 max-w-xl text-lg text-slate-700">{site.description}</p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <a href={`tel:${site.phone}`} className="btn-primary">Call {site.phoneDisplay}</a>
+            <Link href="#services" className="btn-ghost">Pick your service →</Link>
+          </div>
+        </div>
+        <div id="quote" className="lg:pl-8">
+          <QualificationForm service={generalInquiryService} />
         </div>
       </section>
 

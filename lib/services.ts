@@ -1058,8 +1058,45 @@ export const services: Service[] = [
   },
 ];
 
-export const getService = (slug: string) => services.find((s) => s.slug === slug);
+export const getService = (slug: string): Service | undefined =>
+  services.find((s) => s.slug === slug) ?? (slug === "general" ? generalInquiryService : undefined);
 export const listServiceSlugs = () => services.map((s) => s.slug);
+
+export const generalInquiryService: Service = {
+  slug: "general",
+  name: "project",
+  category: "Trades",
+  h1: "Tell us about your project.",
+  subheadline: "",
+  heroImage: "",
+  offer: "Free consult + fixed-price quote in writing",
+  priceRange: "",
+  responseTime: "We'll call within 24 business hours",
+  serviceRadiusMiles: 35,
+  qualifying: [
+    {
+      id: "service",
+      label: "What do you need?",
+      type: "radio",
+      required: true,
+      options: [
+        { value: "design-build", label: "Design-build / new construction" },
+        { value: "remodeling", label: "Kitchen / bath / home remodel" },
+        { value: "roofing", label: "Roofing" },
+        { value: "hvac", label: "HVAC" },
+        { value: "plumbing", label: "Plumbing" },
+        { value: "electrical", label: "Electrical" },
+        { value: "other", label: "Something else" },
+      ],
+    },
+    ...commonQualifying,
+  ],
+  reviews: [],
+  proof: [],
+  faqs: [],
+  trustBadges: [],
+  localKeywords: [],
+};
 
 export const featuredReviews: Review[] = [
   {

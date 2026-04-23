@@ -54,7 +54,12 @@ export async function POST(req: Request) {
     submittedAt: new Date().toISOString(),
   };
 
-  const steps = await runFollowUp(lead, service);
+  const effectiveService =
+    service.slug === "general" && typeof data.answers.service === "string"
+      ? (getService(data.answers.service) ?? service)
+      : service;
+
+  const steps = await runFollowUp(lead, effectiveService);
 
   return NextResponse.json({ ok: true, steps });
 }
