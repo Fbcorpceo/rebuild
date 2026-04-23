@@ -162,8 +162,7 @@ export const services: Service[] = [
     h1: "Same-Day AC Repair in {{city}}. No Overtime Fees.",
     subheadline:
       "EPA-certified techs, upfront flat pricing, and a 100% satisfaction guarantee. Most repairs finished in a single visit.",
-    heroImage:
-      "https://images.unsplash.com/photo-1635048424329-a9bfb146d7aa?auto=format&fit=crop&w=1600&q=70",
+    heroImage: "/hvac-hero.jpg",
     offer: "$59 diagnostic. Waived if you book the repair.",
     priceRange: "$89 service call – $7,200 full system replacement",
     responseTime: "Same-day appointments until 8pm",
