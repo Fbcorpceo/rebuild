@@ -65,14 +65,41 @@ export async function sendCustomerEmail(lead: Lead, service: Service): Promise<R
   );
 }
 
+function formatAnswers(answers: Record<string, string>): string {
+  return Object.entries(answers)
+    .filter(([, v]) => v !== undefined && v !== "")
+    .map(([k, v]) => `<tr><td style="padding:4px 12px 4px 0;color:#64748b">${escape(k)}</td><td style="padding:4px 0"><strong>${escape(String(v))}</strong></td></tr>`)
+    .join("");
+}
+
 export async function sendInternalAlert(lead: Lead, service: Service): Promise<Result> {
   const key = process.env.RESEND_API_KEY;
-  const body = {
-    from: TRANSACTIONAL_FROM,
-    to: [INTERNAL_INBOX],
-    subject: `[NEW LEAD] ${service.name}, ${lead.name}, ${lead.answers.zip || "?"}`,
-    html: `<pre style="font-family:ui-monospace">${escape(JSON.stringify(lead, null, 2))}</pre>`,
-  };
+  const zip = lead.answers.zip || "—";
+  const timing = lead.answers.timing || "—";
+  const subject = `[NEW LEAD] ${service.name} · ${lead.name} · ${zip} · ${timing}`;
+  const html = `
+    <div style="font-family:system-ui,sans-serif;max-width:640px;margin:auto;color:#0f172a">
+      <h2 style="margin:0 0 4px;color:#1e4dab">New lead: ${escape(service.name)}</h2>
+      <p style="margin:0 0 16px;color:#64748b;font-size:13px">Submitted ${escape(lead.submittedAt)}</p>
+
+      <table style="border-collapse:collapse;margin-bottom:16px">
+        <tr><td style="padding:4px 12px 4px 0;color:#64748b">Name</td><td style="padding:4px 0"><strong>${escape(lead.name)}</strong></td></tr>
+        <tr><td style="padding:4px 12px 4px 0;color:#64748b">Phone</td><td style="padding:4px 0"><a href="tel:${escape(lead.phone)}">${escape(lead.phone)}</a></td></tr>
+        <tr><td style="padding:4px 12px 4px 0;color:#64748b">Email</td><td style="padding:4px 0"><a href="mailto:${escape(lead.email)}">${escape(lead.email)}</a></td></tr>
+      </table>
+
+      <h3 style="margin:16px 0 8px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:#64748b">Answers</h3>
+      <table style="border-collapse:collapse">${formatAnswers(lead.answers)}</table>
+
+      ${lead.sourceUrl ? `<p style="margin-top:16px;font-size:13px;color:#64748b">Source: <a href="${escape(lead.sourceUrl)}">${escape(lead.sourceUrl)}</a></p>` : ""}
+      ${lead.utm && Object.keys(lead.utm).length ? `<p style="margin:4px 0;font-size:13px;color:#64748b">UTM: ${escape(JSON.stringify(lead.utm))}</p>` : ""}
+
+      <p style="margin-top:24px">
+        <a href="tel:${escape(lead.phone)}" style="display:inline-block;background:#f59e0b;color:#0f172a;padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:700">Call ${escape(lead.name.split(" ")[0])}</a>
+      </p>
+    </div>`;
+
+  const body = { from: TRANSACTIONAL_FROM, to: [INTERNAL_INBOX], subject, html };
   if (!key) {
     console.log("[followup:email:internal]", body);
     return { ok: true };
@@ -106,6 +133,43 @@ export async function sendCustomerSMS(lead: Lead, service: Service): Promise<Res
   }
 }
 
+export async function sendTelegram(lead: Lead, service: Service): Promise<Result> {
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+
+  // Telegram HTML supports <b>, <i>, <a>, <code>, <pre>. Escape user content.
+  const lines: string[] = [
+    `🚧 <b>New ${escape(service.name)} lead</b>`,
+    "",
+    `<b>${escape(lead.name)}</b>`,
+    `📞 <a href="tel:${encodeURIComponent(lead.phone)}">${escape(lead.phone)}</a>`,
+    `✉️ <a href="mailto:${encodeURIComponent(lead.email)}">${escape(lead.email)}</a>`,
+    "",
+  ];
+  for (const [k, v] of Object.entries(lead.answers)) {
+    if (v) lines.push(`• <i>${escape(k)}</i>: <b>${escape(String(v))}</b>`);
+  }
+  if (lead.sourceUrl) lines.push("", `<a href="${escape(lead.sourceUrl)}">Source page</a>`);
+
+  const text = lines.join("\n");
+
+  if (!token || !chatId) {
+    console.log("[followup:telegram]", { chatId, text });
+    return { ok: true };
+  }
+
+  return postJSON(
+    `https://api.telegram.org/bot${token}/sendMessage`,
+    {},
+    {
+      chat_id: chatId,
+      text,
+      parse_mode: "HTML",
+      disable_web_page_preview: true,
+    },
+  );
+}
+
 export async function pushToCRM(lead: Lead, service: Service): Promise<Result> {
   const url = process.env.CRM_WEBHOOK_URL;
   if (!url) {
@@ -120,10 +184,11 @@ export async function runFollowUp(lead: Lead, service: Service) {
     sendCustomerEmail(lead, service),
     sendInternalAlert(lead, service),
     sendCustomerSMS(lead, service),
+    sendTelegram(lead, service),
     pushToCRM(lead, service),
   ]);
   return results.map((r, i) => ({
-    step: ["customer_email", "internal_alert", "customer_sms", "crm"][i],
+    step: ["customer_email", "internal_alert", "customer_sms", "telegram", "crm"][i],
     ok: r.status === "fulfilled" && r.value.ok,
     error: r.status === "rejected" ? (r.reason as Error).message : r.status === "fulfilled" && !r.value.ok ? r.value.error : undefined,
   }));
