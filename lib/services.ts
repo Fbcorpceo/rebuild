@@ -163,7 +163,7 @@ export const services: Service[] = [
     subheadline:
       "EPA-certified techs, upfront flat pricing, and a 100% satisfaction guarantee. Most repairs finished in a single visit.",
     heroImage:
-      "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=70",
+      "https://images.unsplash.com/photo-1635048424329-a9bfb146d7aa?auto=format&fit=crop&w=1600&q=70",
     offer: "$59 diagnostic. Waived if you book the repair.",
     priceRange: "$89 service call – $7,200 full system replacement",
     responseTime: "Same-day appointments until 8pm",
@@ -228,9 +228,9 @@ export const services: Service[] = [
         caption: "16 SEER condenser install, Burbank",
       },
       {
-        src: "https://images.unsplash.com/photo-1635048424329-a9bfb146d7aa?auto=format&fit=crop&w=900&q=70",
-        alt: "Tech servicing a rooftop HVAC unit",
-        caption: "Annual tune-up, 23-point checklist",
+        src: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=70",
+        alt: "HVAC tech performing diagnostic on exterior unit",
+        caption: "Diagnostic service call, Los Angeles",
       },
       {
         src: "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=900&q=70",
@@ -333,7 +333,7 @@ export const services: Service[] = [
     subheadline:
       "Architect, designer, and crew under one roof. Fewer change orders, faster timelines, and a single point of accountability from concept to keys.",
     heroImage:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=70",
+      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1600&q=70",
     offer: "Free 60-minute design consult + budget range in writing",
     priceRange: "$85k ADU – $1.2M+ whole-home rebuild",
     responseTime: "First call within 24 hours, scope meeting within a week",
@@ -394,18 +394,18 @@ export const services: Service[] = [
     ],
     proof: [
       {
-        src: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=900&q=70",
-        alt: "Modern kitchen renovation completed as part of design-build project",
-        caption: "Design-build kitchen + dining expansion, Pasadena",
+        src: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=70",
+        alt: "Modern design-build home with infinity pool and open indoor-outdoor living",
+        caption: "Custom design-build home, Pacific Palisades",
       },
       {
-        src: "https://images.unsplash.com/photo-1503387837-b154d5074bd2?auto=format&fit=crop&w=900&q=70",
-        alt: "ADU under framing construction",
-        caption: "700 sqft detached ADU, Santa Monica",
+        src: "https://images.unsplash.com/photo-1515263487990-61b07816b324?auto=format&fit=crop&w=900&q=70",
+        alt: "New mixed-use infill construction complete",
+        caption: "Infill new construction, Santa Monica",
       },
       {
-        src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=70",
-        alt: "Living room rendering beside finished result",
+        src: "https://images.unsplash.com/photo-1615971677499-5467cbab01c0?auto=format&fit=crop&w=900&q=70",
+        alt: "Completed living room in a design-build home",
         caption: "Concept to completion, Beverly Hills",
       },
     ],
@@ -483,9 +483,9 @@ export const services: Service[] = [
     ],
     proof: [
       {
-        src: "https://images.unsplash.com/photo-1556909114-44e3e70034e2?auto=format&fit=crop&w=900&q=70",
-        alt: "Renovated kitchen with new cabinetry and countertops",
-        caption: "Full kitchen remodel, Culver City",
+        src: "https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=900&q=70",
+        alt: "Whole-home exterior remodel with updated facade and landscaping",
+        caption: "Whole-home exterior remodel, Los Angeles",
       },
       {
         src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=70",
@@ -493,9 +493,9 @@ export const services: Service[] = [
         caption: "Primary bath, down-to-studs, Glendale",
       },
       {
-        src: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=900&q=70",
-        alt: "Load-bearing wall removal with temporary shoring",
-        caption: "Load-bearing wall removal w/ engineered beam",
+        src: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=900&q=70",
+        alt: "Finished modern bathroom with freestanding tub and dark tile",
+        caption: "Primary bath rebuild, Culver City",
       },
     ],
     faqs: [
@@ -652,14 +652,14 @@ export const services: Service[] = [
     ],
     proof: [
       {
-        src: "https://images.unsplash.com/photo-1503387837-b154d5074bd2?auto=format&fit=crop&w=900&q=70",
-        alt: "New framing lumber installed on second-story addition",
-        caption: "Second-story addition framing, Burbank",
+        src: "https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?auto=format&fit=crop&w=900&q=70",
+        alt: "Framer using a circular saw to cut dimensional lumber",
+        caption: "Cutting plate runs on-site, Burbank",
       },
       {
-        src: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=900&q=70",
-        alt: "ADU framing walls going up on concrete slab",
-        caption: "ADU framing on new slab, Los Angeles",
+        src: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=70",
+        alt: "Carpenter in full PPE working on a framing deck",
+        caption: "ADU framing in progress, Los Angeles",
       },
       {
         src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=70",
@@ -742,9 +742,9 @@ export const services: Service[] = [
     ],
     proof: [
       {
-        src: "https://images.unsplash.com/photo-1556909114-44e3e70034e2?auto=format&fit=crop&w=900&q=70",
-        alt: "Custom kitchen cabinetry installed",
-        caption: "Custom walnut cabinetry, Santa Monica",
+        src: "https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?auto=format&fit=crop&w=900&q=70",
+        alt: "Designer kitchen detail with cutting boards, ceramics, and wood accents",
+        caption: "Finish-level kitchen detail, Santa Monica",
       },
       {
         src: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=900&q=70",
@@ -833,8 +833,8 @@ export const services: Service[] = [
     ],
     proof: [
       {
-        src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=70",
-        alt: "Designed modern living room with curated furniture",
+        src: "https://images.unsplash.com/photo-1522444195799-478538b28823?auto=format&fit=crop&w=900&q=70",
+        alt: "Sunlit living corner with curated sofa, plants, and art",
         caption: "Full-home design + install, Pacific Palisades",
       },
       {
@@ -864,7 +864,7 @@ export const services: Service[] = [
     subheadline:
       "Material logistics, on-site safety, subcontractor coordination, and daily clean-up. Plug us in when you're self-managing a build or your GC needs backup.",
     heroImage:
-      "https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=1600&q=70",
+      "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=1600&q=70",
     offer: "Free site walk + 3-page risk & logistics audit",
     priceRange: "$6,500/mo part-time – $22,000/mo full-time site super",
     responseTime: "First walk-through within 48 hours",
@@ -927,14 +927,14 @@ export const services: Service[] = [
         caption: "Daily-managed site, Los Angeles",
       },
       {
-        src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=70",
-        alt: "Site super reviewing schedule with subcontractor",
-        caption: "Weekly sub coordination, Pasadena",
+        src: "https://images.unsplash.com/photo-1581141849291-1125c7b692b5?auto=format&fit=crop&w=900&q=70",
+        alt: "Laborer moving lumber on-site during active construction",
+        caption: "On-site lumber delivery, Pasadena",
       },
       {
-        src: "https://images.unsplash.com/photo-1591588582259-e675bd2e6088?auto=format&fit=crop&w=900&q=70",
-        alt: "Materials neatly staged on pallets",
-        caption: "Just-in-time materials logistics, Santa Monica",
+        src: "https://images.unsplash.com/photo-1592595896616-c37162298647?auto=format&fit=crop&w=900&q=70",
+        alt: "Completed exterior after supervised build",
+        caption: "Project walk at completion, Santa Monica",
       },
     ],
     faqs: [
@@ -1012,9 +1012,9 @@ export const services: Service[] = [
     ],
     proof: [
       {
-        src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=70",
-        alt: "Project manager reviewing schedule on laptop",
-        caption: "Pre-construction plan review, Glendale",
+        src: "https://images.unsplash.com/photo-1617104551722-3b2d51366400?auto=format&fit=crop&w=900&q=70",
+        alt: "Finished dining room of a professionally-managed remodel",
+        caption: "Completed managed remodel, Glendale",
       },
       {
         src: "https://images.unsplash.com/photo-1542621334-a254cf47733d?auto=format&fit=crop&w=900&q=70",
@@ -1022,9 +1022,9 @@ export const services: Service[] = [
         caption: "Value engineering pass on stamped plans",
       },
       {
-        src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=70",
-        alt: "PM walking site with construction schedule",
-        caption: "Weekly owner's-rep site walk, Long Beach",
+        src: "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=900&q=70",
+        alt: "Open-plan dining and living area in a completed owner-rep project",
+        caption: "Owner-rep build at handoff, Long Beach",
       },
     ],
     faqs: [
@@ -1105,9 +1105,9 @@ export const services: Service[] = [
     ],
     proof: [
       {
-        src: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=70",
-        alt: "Construction plans stamped with approval seal",
-        caption: "LADBS-approved plans, Los Angeles",
+        src: "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=900&q=70",
+        alt: "Hand signing a stamped permit document",
+        caption: "Permit signed and approved, Los Angeles",
       },
       {
         src: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=900&q=70",
@@ -1115,9 +1115,9 @@ export const services: Service[] = [
         caption: "Full submittal package prep",
       },
       {
-        src: "https://images.unsplash.com/photo-1542621334-a254cf47733d?auto=format&fit=crop&w=900&q=70",
-        alt: "Annotated blueprints with correction notes",
-        caption: "Correction-notice response, Pasadena",
+        src: "https://images.unsplash.com/photo-1589834390005-5d4fb9bf3d32?auto=format&fit=crop&w=900&q=70",
+        alt: "Finished home interior after permitted renovation",
+        caption: "Permitted renovation complete, Pasadena",
       },
     ],
     faqs: [
