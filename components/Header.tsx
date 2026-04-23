@@ -12,10 +12,13 @@ export default function Header() {
             {site.productLine}
           </span>
         </Link>
-        <nav className="hidden items-center gap-6 text-sm sm:flex">
+        <nav className="hidden items-center gap-5 text-sm md:flex">
           <Link href="/services/roofing" className="text-slate-700 hover:text-slate-900">Roofing</Link>
           <Link href="/services/hvac" className="text-slate-700 hover:text-slate-900">HVAC</Link>
           <Link href="/services/plumbing" className="text-slate-700 hover:text-slate-900">Plumbing</Link>
+          <Link href="/services/electrical" className="text-slate-700 hover:text-slate-900">Electrical</Link>
+          <Link href="/services/remodeling" className="text-slate-700 hover:text-slate-900">Remodeling</Link>
+          <Link href="/#services" className="font-semibold text-brand-700 hover:text-brand-900">All services →</Link>
         </nav>
         <a href={`tel:${site.phone}`} className="btn-primary text-sm">
           Call {site.phoneDisplay}
