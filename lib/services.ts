@@ -150,9 +150,9 @@ export const services: Service[] = [
     faqs: [
       { q: "Do you handle insurance claims?", a: "Yes — we document damage, meet the adjuster, and only charge your deductible on approved claims." },
       { q: "How long does a replacement take?", a: "Most single-family homes: one day. Larger or steeper roofs: two." },
-      { q: "Are you licensed and insured?", a: "CSLB License #1068191 (C-39 Roofing). $2M general liability and full workers' comp on every crew." },
+      { q: "Are you licensed and insured?", a: "CSLB Lic. #1068191. Bonded and insured." },
     ],
-    trustBadges: ["Licensed & Insured", "GAF Master Elite", "BBB A+", "4.9★ on Google (412 reviews)"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "GAF Master Elite", "4.9★ on Google (412 reviews)"],
     localKeywords: ["roofer near me", "roof repair {{city}}", "storm damage roofer", "insurance claim roofing"],
   },
   {
@@ -243,7 +243,7 @@ export const services: Service[] = [
       { q: "How fast can you get here?", a: "Most same-day within 2–4 hours. Emergencies prioritized." },
       { q: "What warranty comes with a new system?", a: "10-year parts, 10-year compressor, 2-year labor." },
     ],
-    trustBadges: ["NATE-Certified", "EPA 608", "BBB A+", "4.9★ on Google (288 reviews)"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "EPA 608", "4.9★ on Google (288 reviews)"],
     localKeywords: ["ac repair near me", "hvac {{city}}", "ac not cooling", "emergency ac repair"],
   },
   {
@@ -319,10 +319,10 @@ export const services: Service[] = [
     ],
     faqs: [
       { q: "Is the trip charge really free?", a: "When you approve any repair, yes. We'll tell you the total before we turn a wrench." },
-      { q: "Are you licensed?", a: "California C-36 Plumbing Contractor License #1068191. $1M liability." },
+      { q: "Are you licensed?", a: "CSLB Lic. #1068191. Bonded and insured." },
       { q: "Financing?", a: "0% for 18 months on approved credit for jobs over $1,000." },
     ],
-    trustBadges: ["CSLB C-36 #1068191", "24/7 Dispatch", "BBB A+", "4.8★ on Google (196 reviews)"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "24/7 Dispatch", "4.8★ on Google (196 reviews)"],
     localKeywords: ["plumber near me", "emergency plumber {{city}}", "water heater repair", "24/7 plumber"],
   },
   {
@@ -414,7 +414,7 @@ export const services: Service[] = [
       { q: "How long is the design phase?", a: "Typical single-family remodel: 6–10 weeks from kickoff to permit submittal." },
       { q: "What if we already have plans?", a: "We'll review them free of charge and either build to them or flag anything that'll cause permitting or budget pain." },
     ],
-    trustBadges: ["CSLB B #1068191", "AIA-Partner Architects", "Bonded & Insured", "4.9★ on Google"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "AIA-Partner Architects", "4.9★ on Google"],
     localKeywords: ["design build contractor {{city}}", "ADU builder near me", "home addition contractor", "whole home remodel"],
   },
   {
@@ -503,7 +503,7 @@ export const services: Service[] = [
       { q: "Can we live in the house during construction?", a: "For kitchen-only or bath-only: usually yes. For whole-home: we'll tell you honestly before you sign." },
       { q: "What warranty do you offer?", a: "2 years on labor, manufacturer warranties on fixtures and finishes." },
     ],
-    trustBadges: ["CSLB B #1068191", "Permit Expediting Included", "2-Year Labor Warranty", "4.9★ on Google"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "Permit Expediting Included", "2-Year Labor Warranty"],
     localKeywords: ["kitchen remodel {{city}}", "bathroom remodel near me", "home addition contractor", "load bearing wall removal"],
   },
   {
@@ -512,7 +512,7 @@ export const services: Service[] = [
     category: "Trades",
     h1: "Licensed Electricians in {{city}} — Same-Day Service Calls, Flat-Rate Pricing",
     subheadline:
-      "Panel upgrades, EV chargers, troubleshooting, rewires. C-10 licensed, fully insured, and no markup on parts — you'll see the invoice from the supply house.",
+      "Panel upgrades, EV chargers, troubleshooting, rewires. Licensed, bonded and insured, and no markup on parts — you'll see the invoice from the supply house.",
     heroImage:
       "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1600&q=70",
     offer: "$59 diagnostic — waived when you approve the repair",
@@ -580,10 +580,10 @@ export const services: Service[] = [
     ],
     faqs: [
       { q: "Do you pull permits for panel work?", a: "Yes, every panel and service upgrade is permitted and inspected. We handle it end-to-end." },
-      { q: "Are you licensed?", a: "California C-10 Electrical Contractor License #1068191. $2M liability and full workers' comp." },
+      { q: "Are you licensed?", a: "CSLB Lic. #1068191. Bonded and insured." },
       { q: "Do you charge extra after hours?", a: "Flat rates 7am–8pm, seven days. No overtime surcharge." },
     ],
-    trustBadges: ["CSLB C-10 #1068191", "EV Charger Certified", "BBB A+", "4.9★ on Google"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "EV Charger Certified", "4.9★ on Google"],
     localKeywords: ["electrician near me", "EV charger installation {{city}}", "panel upgrade", "emergency electrician"],
   },
   {
@@ -672,7 +672,7 @@ export const services: Service[] = [
       { q: "Who coordinates inspections?", a: "We do. Rough framing inspection is on us, and we'll be on-site when the inspector arrives." },
       { q: "Do you work for GCs or only homeowners?", a: "Both. About half our volume is sub work for other licensed GCs." },
     ],
-    trustBadges: ["CSLB B #1068191", "In-House Crew (No Day-Labor)", "Bonded & Insured", "On-Time Track Record"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "In-House Crew (No Day-Labor)", "On-Time Track Record"],
     localKeywords: ["framing contractor {{city}}", "addition framer near me", "ADU framing", "residential framing"],
   },
   {
@@ -762,7 +762,7 @@ export const services: Service[] = [
       { q: "Any warranty on finish work?", a: "2 years on installation labor. Product warranties pass through from the manufacturer." },
       { q: "How bad is the dust?", a: "We use HEPA vacuums on sanders and zip-wall containment between active and living areas. It's about as clean as construction gets." },
     ],
-    trustBadges: ["Licensed & Insured", "Trade Pricing Passed Through", "2-Year Labor Warranty", "4.9★ on Google"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "Trade Pricing Passed Through", "2-Year Labor Warranty"],
     localKeywords: ["custom cabinets {{city}}", "finish carpenter near me", "interior painter", "hardwood flooring installer"],
   },
   {
@@ -853,7 +853,7 @@ export const services: Service[] = [
       { q: "Who buys the furniture?", a: "Your call. We'll handle procurement and delivery coordination if you want, or hand you a shopping list with direct links." },
       { q: "Can we see past work?", a: "Yes — full portfolio with addresses on request (NDA for private clients)." },
     ],
-    trustBadges: ["Licensed & Insured", "Trade-Only Showroom Access", "ASID-Affiliated Designers", "5.0★ Average Project"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "Trade-Only Showroom Access", "5.0★ Average Project"],
     localKeywords: ["interior designer {{city}}", "home design consultant", "kitchen designer near me", "whole home interior design"],
   },
   {
@@ -1032,7 +1032,7 @@ export const services: Service[] = [
       { q: "What do you produce each week?", a: "One written status report, one budget snapshot, one schedule update. Plus ad-hoc texts and calls whenever you need us." },
       { q: "Do you bid the job for us?", a: "Yes — we qualify GCs, level bids apples-to-apples, and sit in on negotiations." },
     ],
-    trustBadges: ["Owner's-Rep Agreements", "Flat-Fee or % Options", "Bonded & Insured", "Licensed CSLB B"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "Owner's-Rep Agreements", "Flat-Fee or % Options"],
     localKeywords: ["construction project manager {{city}}", "owners representative near me", "residential construction manager", "home build project management"],
   },
   {

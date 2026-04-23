@@ -39,7 +39,7 @@ export const site = {
     facebook: "https://facebook.com/fbcorp",
     instagram: "https://instagram.com/fbcorp",
   },
-  licenses: ["CSLB Lic. #1068191 (B · C-20 · C-36 · C-39)", "EPA 608 Certified", "Bonded & Insured"],
+  licenses: ["CSLB Lic. #1068191", "Bonded & Insured"],
   ratings: { google: { stars: 4.9, count: 896 } },
 } as const;
 
