@@ -15,6 +15,7 @@ export type Review = {
   body: string;
   source: "Google" | "Yelp" | "Facebook";
   date: string;
+  verified?: boolean;
 };
 
 export type ProofPhoto = {
@@ -103,34 +104,7 @@ export const services: Service[] = [
         ],
       },
     ],
-    reviews: [
-      {
-        author: "Sarah K.",
-        city: "Pasadena, CA",
-        rating: 5,
-        body:
-          "Windstorm took out half my shingles. They had a tarp on my roof the same afternoon and walked the insurance adjuster through every item. Replacement looked better than the original.",
-        source: "Google",
-        date: "2026-02-14",
-      },
-      {
-        author: "Marcus D.",
-        city: "Long Beach, CA",
-        rating: 5,
-        body:
-          "Three other companies wanted to sell me a full replacement. These guys found the actual leak in 10 minutes and fixed it for $600. Honest people.",
-        source: "Google",
-        date: "2026-01-03",
-      },
-      {
-        author: "Lena P.",
-        city: "Glendale, CA",
-        rating: 5,
-        body: "Fixed-price quote up front, crew showed up on time, cleaned every nail off my driveway with a magnet.",
-        source: "Yelp",
-        date: "2025-11-22",
-      },
-    ],
+    reviews: [],
     proof: [
       {
         src: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=900&q=70",
@@ -153,7 +127,7 @@ export const services: Service[] = [
       { q: "How long does a replacement take?", a: "Most single-family homes: one day. Larger or steeper roofs: two." },
       { q: "Are you licensed and insured?", a: "CSLB Lic. #1068191. Bonded and insured." },
     ],
-    trustBadges: ["CSLB #1068191", "Bonded & Insured", "GAF Master Elite", "4.9★ on Google (412 reviews)"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "GAF Master Elite", "5.0★ on Google"],
     localKeywords: ["roofer near me", "roof repair {{city}}", "storm damage roofer", "insurance claim roofing"],
   },
   {
@@ -196,32 +170,7 @@ export const services: Service[] = [
         ],
       },
     ],
-    reviews: [
-      {
-        author: "Jerome T.",
-        city: "Los Angeles, CA",
-        rating: 5,
-        body: "Called at 7am when the AC quit. Tech was at my door by 10, had a new capacitor installed by 10:30. $189 flat. No upsell nonsense.",
-        source: "Google",
-        date: "2026-03-18",
-      },
-      {
-        author: "Priya S.",
-        city: "Burbank, CA",
-        rating: 5,
-        body: "Replaced our 18-year-old unit. Three quotes, theirs was the middle price but the only one that itemized everything. Crew was spotless.",
-        source: "Google",
-        date: "2026-02-02",
-      },
-      {
-        author: "Evan M.",
-        city: "Santa Monica, CA",
-        rating: 5,
-        body: "Tech talked me out of a $4,200 repair and showed me a $240 fix. I'll call them forever.",
-        source: "Facebook",
-        date: "2025-12-09",
-      },
-    ],
+    reviews: [],
     proof: [
       {
         src: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=70",
@@ -244,7 +193,7 @@ export const services: Service[] = [
       { q: "How fast can you get here?", a: "Most same-day within 2–4 hours. Emergencies prioritized." },
       { q: "What warranty comes with a new system?", a: "10-year parts, 10-year compressor, 2-year labor." },
     ],
-    trustBadges: ["CSLB #1068191", "Bonded & Insured", "EPA 608", "4.9★ on Google (288 reviews)"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "EPA 608", "5.0★ on Google"],
     localKeywords: ["ac repair near me", "hvac {{city}}", "ac not cooling", "emergency ac repair"],
   },
   {
@@ -277,28 +226,14 @@ export const services: Service[] = [
     ],
     reviews: [
       {
-        author: "Angela R.",
-        city: "Los Angeles, CA",
+        author: "Amanda",
+        city: "Malibu, CA",
         rating: 5,
-        body: "Midnight pipe burst. On the phone in 90 seconds, plumber in the driveway in 40 minutes. Cut a precise hole, fixed the copper, insured the drywall patch. Lifesavers.",
+        body:
+          "We had drainage and foundation issues in Malibu and needed a reliable solution. Carlos handled the work professionally and everything was done carefully. The project stayed on time and the whole experience was smooth. Very solid company.",
         source: "Google",
-        date: "2026-03-02",
-      },
-      {
-        author: "Dan W.",
-        city: "Torrance, CA",
-        rating: 5,
-        body: "Replaced a 40-gallon tank with a tankless. Came in $800 under the other quote, finished in a day, left the garage cleaner than they found it.",
-        source: "Google",
-        date: "2026-01-15",
-      },
-      {
-        author: "Maya F.",
-        city: "Inglewood, CA",
-        rating: 5,
-        body: "Cleared a main line clog that two other companies quoted $2k+ for. Theirs was $480 and worked.",
-        source: "Yelp",
-        date: "2025-10-28",
+        date: "2025-10-01",
+        verified: true,
       },
     ],
     proof: [
@@ -323,7 +258,7 @@ export const services: Service[] = [
       { q: "Are you licensed?", a: "CSLB Lic. #1068191. Bonded and insured." },
       { q: "Financing?", a: "0% for 18 months on approved credit for jobs over $1,000." },
     ],
-    trustBadges: ["CSLB #1068191", "Bonded & Insured", "24/7 Dispatch", "4.8★ on Google (196 reviews)"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "24/7 Dispatch", "5.0★ on Google"],
     localKeywords: ["plumber near me", "emergency plumber {{city}}", "water heater repair", "24/7 plumber"],
   },
   {
@@ -369,28 +304,34 @@ export const services: Service[] = [
     ],
     reviews: [
       {
-        author: "Alicia M.",
-        city: "Beverly Hills, CA",
+        author: "Amanda De Leon",
+        city: "North Hollywood, CA",
         rating: 5,
-        body: "We'd been burned twice trying to coordinate an architect and a GC separately. FB Corp handled both. Budget at kickoff matched the final invoice within 3%.",
+        body:
+          "Our ADU build in North Hollywood turned out great. Adam helped make sure everything stayed organized and moved along properly. The design support helped us make better layout decisions. FBcorp delivered exactly what we were hoping for.",
         source: "Google",
-        date: "2026-02-28",
+        date: "2025-10-10",
+        verified: true,
       },
       {
-        author: "Paul K.",
-        city: "Pasadena, CA",
+        author: "Natalie Golovkova",
+        city: "Sherman Oaks, CA",
         rating: 5,
-        body: "Detached ADU in the back yard, permit through ready-to-move-in. Ten months, zero surprise bills. Our project manager answered texts on weekends.",
+        body:
+          "We renovated our home in Sherman Oaks and the project was handled very professionally. Drew kept everything organized and on track from start to finish. The job site ran efficiently and communication was clear. Foundational Builders made it easy.",
         source: "Google",
-        date: "2026-01-18",
+        date: "2025-09-22",
+        verified: true,
       },
       {
-        author: "Dina W.",
-        city: "Santa Monica, CA",
+        author: "Alaina Feister",
+        city: "Glendale, CA",
         rating: 5,
-        body: "Whole-second-story addition over an occupied ground floor. Somehow they made it livable the entire time.",
-        source: "Yelp",
-        date: "2025-11-04",
+        body:
+          "We built an ADU in Glendale and the whole process felt easy. Andrew was responsive and kept everything moving smoothly. The design support helped a lot and the space turned out great. FBcorp stayed on time and everything felt well managed.",
+        source: "Google",
+        date: "2025-09-05",
+        verified: true,
       },
     ],
     proof: [
@@ -415,7 +356,7 @@ export const services: Service[] = [
       { q: "How long is the design phase?", a: "Typical single-family remodel: 6–10 weeks from kickoff to permit submittal." },
       { q: "What if we already have plans?", a: "We'll review them free of charge and either build to them or flag anything that'll cause permitting or budget pain." },
     ],
-    trustBadges: ["CSLB #1068191", "Bonded & Insured", "AIA-Partner Architects", "4.9★ on Google"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "AIA-Partner Architects", "5.0★ on Google"],
     localKeywords: ["design build contractor {{city}}", "ADU builder near me", "home addition contractor", "whole home remodel"],
   },
   {
@@ -458,28 +399,34 @@ export const services: Service[] = [
     ],
     reviews: [
       {
-        author: "Ravi P.",
-        city: "Culver City, CA",
+        author: "Mauricio De Leon",
+        city: "Pasadena, CA",
         rating: 5,
-        body: "Gutted the primary bath down to studs. Finished 4 days ahead of schedule. The tile work is better than the showroom we picked it from.",
+        body:
+          "We did a kitchen remodel in Pasadena and had a great experience. Everything stayed on time, which we really appreciated. The design guidance made it easier to choose the right finishes. The whole process felt smooth and stress-free.",
         source: "Google",
-        date: "2026-03-08",
+        date: "2025-11-12",
+        verified: true,
       },
       {
-        author: "Meg L.",
-        city: "Glendale, CA",
+        author: "Natalie Golovkova",
+        city: "Sherman Oaks, CA",
         rating: 5,
-        body: "Took out a load-bearing wall between kitchen and living room. Structural engineer, beam install, and finish work. One crew. Entire process made sense for the first time.",
+        body:
+          "We renovated our home in Sherman Oaks and the project was handled very professionally. Drew kept everything organized and on track from start to finish. The job site ran efficiently and communication was clear. Foundational Builders made it easy.",
         source: "Google",
-        date: "2026-01-22",
+        date: "2025-09-22",
+        verified: true,
       },
       {
-        author: "Tomás R.",
-        city: "Long Beach, CA",
+        author: "Amanda",
+        city: "Malibu, CA",
         rating: 5,
-        body: "Kitchen remodel with a hard deadline before family arrived. They hit it to the day.",
-        source: "Yelp",
-        date: "2025-12-12",
+        body:
+          "We had drainage and foundation issues in Malibu and needed a reliable solution. Carlos handled the work professionally and everything was done carefully. The project stayed on time and the whole experience was smooth. Very solid company.",
+        source: "Google",
+        date: "2025-10-01",
+        verified: true,
       },
     ],
     proof: [
@@ -536,32 +483,7 @@ export const services: Service[] = [
         ],
       },
     ],
-    reviews: [
-      {
-        author: "Hannah B.",
-        city: "Los Angeles, CA",
-        rating: 5,
-        body: "Tesla charger install, 60A circuit to the garage. Quoted 4 hours, done in 3. Clean conduit run, labeled panel.",
-        source: "Google",
-        date: "2026-03-22",
-      },
-      {
-        author: "Greg S.",
-        city: "Torrance, CA",
-        rating: 5,
-        body: "1960s panel upgrade to 200A. Permit, inspection, and a spotless job. Tech explained every change before making it.",
-        source: "Google",
-        date: "2026-02-09",
-      },
-      {
-        author: "Nora D.",
-        city: "Whittier, CA",
-        rating: 5,
-        body: "Breakers kept tripping on the kitchen circuit. They found a loose neutral in 15 minutes that two other electricians missed.",
-        source: "Google",
-        date: "2025-12-18",
-      },
-    ],
+    reviews: [],
     proof: [
       {
         src: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=70",
@@ -584,7 +506,7 @@ export const services: Service[] = [
       { q: "Are you licensed?", a: "CSLB Lic. #1068191. Bonded and insured." },
       { q: "Do you charge extra after hours?", a: "Flat rates 7am–8pm, seven days. No overtime surcharge." },
     ],
-    trustBadges: ["CSLB #1068191", "Bonded & Insured", "EV Charger Certified", "4.9★ on Google"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "EV Charger Certified", "5.0★ on Google"],
     localKeywords: ["electrician near me", "EV charger installation {{city}}", "panel upgrade", "emergency electrician"],
   },
   {
@@ -627,28 +549,34 @@ export const services: Service[] = [
     ],
     reviews: [
       {
-        author: "Ben A.",
-        city: "Burbank, CA",
+        author: "Amanda De Leon",
+        city: "North Hollywood, CA",
         rating: 5,
-        body: "Second-story addition framed in 11 days over the rainiest week of the year. Crew tarped and protected everything every single night.",
+        body:
+          "Our ADU build in North Hollywood turned out great. Adam helped make sure everything stayed organized and moved along properly. The design support helped us make better layout decisions. FBcorp delivered exactly what we were hoping for.",
         source: "Google",
-        date: "2026-03-01",
+        date: "2025-10-10",
+        verified: true,
       },
       {
-        author: "Rosa M.",
+        author: "Alaina Feister",
+        city: "Glendale, CA",
+        rating: 5,
+        body:
+          "We built an ADU in Glendale and the whole process felt easy. Andrew was responsive and kept everything moving smoothly. The design support helped a lot and the space turned out great. FBcorp stayed on time and everything felt well managed.",
+        source: "Google",
+        date: "2025-09-05",
+        verified: true,
+      },
+      {
+        author: "Zara Gemilyan",
         city: "Los Angeles, CA",
         rating: 5,
-        body: "Detached ADU framing came in exactly on the bid. Lead framer walked me through shear wall nailing so I understood what I was paying for.",
+        body:
+          "I had an excellent experience working with Foundational Builders on my building project. They delivered exactly as promised — on time, efficient, and highly professional. A special mention to Drew, the owner and main contractor, who was incredibly helpful and responsive throughout the process.",
         source: "Google",
-        date: "2026-01-28",
-      },
-      {
-        author: "Drew K.",
-        city: "Pasadena, CA",
-        rating: 5,
-        body: "Our old GC flaked halfway through framing. FB Corp picked up the job, fixed the mistakes, and got us past rough inspection.",
-        source: "Yelp",
-        date: "2025-11-15",
+        date: "2025-08-18",
+        verified: true,
       },
     ],
     proof: [
@@ -717,28 +645,34 @@ export const services: Service[] = [
     ],
     reviews: [
       {
-        author: "Kim H.",
-        city: "Santa Monica, CA",
+        author: "Mauricio De Leon",
+        city: "Pasadena, CA",
         rating: 5,
-        body: "Custom walnut cabinets throughout the kitchen and primary closet. Installed on schedule, tuned the doors and drawers twice until everything glided perfectly.",
+        body:
+          "We did a kitchen remodel in Pasadena and had a great experience. Everything stayed on time, which we really appreciated. The design guidance made it easier to choose the right finishes. The whole process felt smooth and stress-free.",
         source: "Google",
-        date: "2026-02-20",
+        date: "2025-11-12",
+        verified: true,
       },
       {
-        author: "Marco T.",
-        city: "Inglewood, CA",
+        author: "Amanda De Leon",
+        city: "North Hollywood, CA",
         rating: 5,
-        body: "Engineered hardwood across 1,800 sqft. Not a single gap or creaky board. Baseboards came out so clean my wife still points them out.",
+        body:
+          "Our ADU build in North Hollywood turned out great. Adam helped make sure everything stayed organized and moved along properly. The design support helped us make better layout decisions. FBcorp delivered exactly what we were hoping for.",
         source: "Google",
-        date: "2026-01-10",
+        date: "2025-10-10",
+        verified: true,
       },
       {
-        author: "Sasha B.",
-        city: "Long Beach, CA",
+        author: "Alaina Feister",
+        city: "Glendale, CA",
         rating: 5,
-        body: "Interior repaint on a whole house. They covered every fixture, labeled every switch plate, and finished 2 days early.",
-        source: "Yelp",
-        date: "2025-11-29",
+        body:
+          "We built an ADU in Glendale and the whole process felt easy. Andrew was responsive and kept everything moving smoothly. The design support helped a lot and the space turned out great. FBcorp stayed on time and everything felt well managed.",
+        source: "Google",
+        date: "2025-09-05",
+        verified: true,
       },
     ],
     proof: [
@@ -808,28 +742,34 @@ export const services: Service[] = [
     ],
     reviews: [
       {
-        author: "Zoe R.",
-        city: "Pacific Palisades, CA",
+        author: "Mauricio De Leon",
+        city: "Pasadena, CA",
         rating: 5,
-        body: "Designer came with mood boards that actually matched how we live. Every vendor she recommended delivered on time. Our house finally looks like us.",
+        body:
+          "We did a kitchen remodel in Pasadena and had a great experience. Everything stayed on time, which we really appreciated. The design guidance made it easier to choose the right finishes. The whole process felt smooth and stress-free.",
         source: "Google",
-        date: "2026-03-12",
+        date: "2025-11-12",
+        verified: true,
       },
       {
-        author: "Andre J.",
-        city: "Beverly Hills, CA",
+        author: "Amanda De Leon",
+        city: "North Hollywood, CA",
         rating: 5,
-        body: "We'd worked with two design-only firms and the install was always chaos. This one ran the install themselves. Flawless.",
+        body:
+          "Our ADU build in North Hollywood turned out great. Adam helped make sure everything stayed organized and moved along properly. The design support helped us make better layout decisions. FBcorp delivered exactly what we were hoping for.",
         source: "Google",
-        date: "2026-02-06",
+        date: "2025-10-10",
+        verified: true,
       },
       {
-        author: "Prisha V.",
-        city: "Culver City, CA",
+        author: "Alaina Feister",
+        city: "Glendale, CA",
         rating: 5,
-        body: "Consulted for 4 hours on our new build's kitchen and primary suite. Worth 10x what we paid.",
-        source: "Yelp",
-        date: "2025-12-01",
+        body:
+          "We built an ADU in Glendale and the whole process felt easy. Andrew was responsive and kept everything moving smoothly. The design support helped a lot and the space turned out great. FBcorp stayed on time and everything felt well managed.",
+        source: "Google",
+        date: "2025-09-05",
+        verified: true,
       },
     ],
     proof: [
@@ -854,7 +794,7 @@ export const services: Service[] = [
       { q: "Who buys the furniture?", a: "Your call. We'll handle procurement and delivery coordination if you want, or hand you a shopping list with direct links." },
       { q: "Can we see past work?", a: "Yes, full portfolio with addresses on request (NDA for private clients)." },
     ],
-    trustBadges: ["CSLB #1068191", "Bonded & Insured", "Trade-Only Showroom Access", "5.0★ Average Project"],
+    trustBadges: ["CSLB #1068191", "Bonded & Insured", "Trade-Only Showroom Access", "5.0★ on Google"],
     localKeywords: ["interior designer {{city}}", "home design consultant", "kitchen designer near me", "whole home interior design"],
   },
   {
@@ -897,28 +837,34 @@ export const services: Service[] = [
     ],
     reviews: [
       {
-        author: "Vincent P.",
+        author: "Zara Gemilyan",
         city: "Los Angeles, CA",
         rating: 5,
-        body: "Owner-built a duplex and hit a wall coordinating trades. FB Corp stepped in as site super, saved us two months and a small fortune.",
+        body:
+          "They delivered exactly as promised — on time, efficient, and highly professional. The team was organized and detail-oriented, ensuring everything was completed smoothly. A special mention to Drew, the owner and main contractor, who was incredibly helpful and responsive throughout the process.",
         source: "Google",
-        date: "2026-02-25",
+        date: "2025-08-18",
+        verified: true,
       },
       {
-        author: "Bethany K.",
-        city: "Pasadena, CA",
+        author: "Natalie Golovkova",
+        city: "Sherman Oaks, CA",
         rating: 5,
-        body: "Our original GC was stretched. Their site super took over daily coordination and the job finished on time without us firing anyone.",
+        body:
+          "We renovated our home in Sherman Oaks and the project was handled very professionally. Drew kept everything organized and on track from start to finish. The job site ran efficiently and communication was clear. Foundational Builders made it easy.",
         source: "Google",
-        date: "2026-01-14",
+        date: "2025-09-22",
+        verified: true,
       },
       {
-        author: "Miles O.",
-        city: "Santa Monica, CA",
+        author: "Amanda De Leon",
+        city: "North Hollywood, CA",
         rating: 5,
-        body: "Materials showed up when they should. Subs knew when to show up. Site was swept every Friday. Worth every dollar.",
-        source: "Yelp",
-        date: "2025-12-05",
+        body:
+          "Our ADU build in North Hollywood turned out great. Adam helped make sure everything stayed organized and moved along properly. The design support helped us make better layout decisions. FBcorp delivered exactly what we were hoping for.",
+        source: "Google",
+        date: "2025-10-10",
+        verified: true,
       },
     ],
     proof: [
@@ -987,28 +933,34 @@ export const services: Service[] = [
     ],
     reviews: [
       {
-        author: "Carla M.",
-        city: "Glendale, CA",
-        rating: 5,
-        body: "Owner-build of our forever home. Having FB Corp run the project meant I didn't have to quit my day job to answer 40 questions a week.",
-        source: "Google",
-        date: "2026-03-04",
-      },
-      {
-        author: "Jason Y.",
-        city: "Long Beach, CA",
-        rating: 5,
-        body: "They caught a $45,000 structural mistake in the plans before the concrete truck showed up. Already paid for themselves five times over.",
-        source: "Google",
-        date: "2026-01-26",
-      },
-      {
-        author: "Raúl S.",
+        author: "Zara Gemilyan",
         city: "Los Angeles, CA",
         rating: 5,
-        body: "My PM flagged scope creep the moment it started. Project came in $12k under budget.",
-        source: "Yelp",
-        date: "2025-11-20",
+        body:
+          "A special mention to Drew, the owner and main contractor, who was incredibly helpful and responsive throughout the process. His communication and hands-on approach made the entire experience stress-free. I highly recommend Foundational Builders to anyone looking for a reliable and skilled construction team.",
+        source: "Google",
+        date: "2025-08-18",
+        verified: true,
+      },
+      {
+        author: "Natalie Golovkova",
+        city: "Sherman Oaks, CA",
+        rating: 5,
+        body:
+          "We renovated our home in Sherman Oaks and the project was handled very professionally. Drew kept everything organized and on track from start to finish. The job site ran efficiently and communication was clear. Foundational Builders made it easy.",
+        source: "Google",
+        date: "2025-09-22",
+        verified: true,
+      },
+      {
+        author: "Alaina Feister",
+        city: "Glendale, CA",
+        rating: 5,
+        body:
+          "We built an ADU in Glendale and the whole process felt easy. Andrew was responsive and kept everything moving smoothly. The design support helped a lot and the space turned out great. FBcorp stayed on time and everything felt well managed.",
+        source: "Google",
+        date: "2025-09-05",
+        verified: true,
       },
     ],
     proof: [
@@ -1078,32 +1030,7 @@ export const services: Service[] = [
         ],
       },
     ],
-    reviews: [
-      {
-        author: "Yuki T.",
-        city: "Los Angeles, CA",
-        rating: 5,
-        body: "LADBS corrections that had stalled our project for 6 weeks were resolved in 9 days. Worth every dollar.",
-        source: "Google",
-        date: "2026-03-19",
-      },
-      {
-        author: "Owen F.",
-        city: "Santa Monica, CA",
-        rating: 5,
-        body: "ADU permit over the counter in Santa Monica. Would've been six weeks solo. They had it in 4 days.",
-        source: "Google",
-        date: "2026-02-03",
-      },
-      {
-        author: "Maya C.",
-        city: "Pasadena, CA",
-        rating: 5,
-        body: "Knew exactly which planner to talk to, exactly which drawings needed revising. Saved us at least a month.",
-        source: "Yelp",
-        date: "2025-12-22",
-      },
-    ],
+    reviews: [],
     proof: [
       {
         src: "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=900&q=70",

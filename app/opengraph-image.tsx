@@ -59,7 +59,7 @@ export default async function OG() {
             {`Roofing, HVAC & Plumbing rebuilds across ${site.primaryCity}.`}
           </div>
           <div style={{ fontSize: 28, fontWeight: 500, opacity: 0.92 }}>
-            {"Free 24-hour quote · Licensed & insured · Rated 4.9/5 on Google"}
+            {`Free 24-hour quote · Licensed & insured · ${site.ratings.google.stars}/5 on Google`}
           </div>
         </div>
 

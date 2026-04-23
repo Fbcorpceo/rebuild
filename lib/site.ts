@@ -1,6 +1,6 @@
 export const site = {
   brand: "FB Corp",
-  legalName: "FB Corp, Inc.",
+  legalName: "Foundational Builders Corp",
   productLine: "Rebuild Services",
   domain: "fbcorp.io",
   url: "https://www.fbcorp.io",
@@ -35,12 +35,12 @@ export const site = {
     { day: ["Sa", "Su"], opens: "08:00", closes: "18:00" },
   ],
   social: {
-    google: "https://www.google.com/search?q=FB+Corp+Los+Angeles",
+    google: "https://share.google/PKVckzcd2My94Ooyz",
     facebook: "https://facebook.com/fbcorp",
     instagram: "https://instagram.com/fbcorp",
   },
   licenses: ["CSLB Lic. #1068191", "Bonded & Insured"],
-  ratings: { google: { stars: 4.9, count: 896 } },
+  ratings: { google: { stars: 5.0, count: 6 } },
 } as const;
 
 export type Site = typeof site;
