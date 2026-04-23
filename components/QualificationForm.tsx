@@ -94,9 +94,9 @@ export default function QualificationForm({ service }: Props) {
       <div className="rounded-2xl bg-white p-6 shadow-card ring-1 ring-slate-100">
         <div className="mb-2 text-sm font-semibold text-brand-700">Request received</div>
         <h3 className="text-2xl font-bold">You're on the dispatch board, {name.split(" ")[0]}.</h3>
-        <p className="mt-2 text-slate-600">{service.responseTime}. Check your phone — we'll be calling from a local number.</p>
+        <p className="mt-2 text-slate-600">{service.responseTime}. Check your phone. We'll be calling from a local number.</p>
         <div className="mt-4 rounded-xl bg-slate-50 p-4 text-sm text-slate-700">
-          <div><span className="font-medium">Need us right now?</span> Call us directly — we'll route you straight to dispatch.</div>
+          <div><span className="font-medium">Need us right now?</span> Call us directly. We'll route you straight to dispatch.</div>
         </div>
       </div>
     );

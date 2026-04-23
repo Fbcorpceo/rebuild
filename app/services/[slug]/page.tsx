@@ -49,7 +49,7 @@ export default function ServicePage({ params }: Params) {
         <h2 className="mb-4 text-2xl font-bold">We're the local crew in {site.primaryCity}</h2>
         <p className="max-w-3xl text-slate-700">
           Same crews, same vans, same phone number since we opened our {site.address.city} shop.
-          We serve {site.serviceAreas.join(", ")} — and if we can't get to you the same day, we'll tell you up front.
+          We serve {site.serviceAreas.join(", ")}, and if we can't get to you the same day, we'll tell you up front.
         </p>
         <ul className="mt-5 flex flex-wrap gap-2">
           {site.serviceAreas.map((c) => (

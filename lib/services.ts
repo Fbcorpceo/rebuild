@@ -78,9 +78,9 @@ export const services: Service[] = [
     slug: "roofing",
     name: "Roofing",
     category: "Trades",
-    h1: "Licensed Roofers in {{city}} — Free Inspection in 24 Hours",
+    h1: "Licensed Roofers in {{city}}. Free Inspection in 24 Hours.",
     subheadline:
-      "Storm damage, leaks, or a full replacement. Get a fixed-price quote from a local, insured crew — no high-pressure sales.",
+      "Storm damage, leaks, or a full replacement. Get a fixed-price quote from a local, insured crew. No high-pressure sales.",
     heroImage:
       "https://images.unsplash.com/photo-1632759145355-8b8f3ab1b95e?auto=format&fit=crop&w=1600&q=70",
     offer: "Free 27-point roof inspection + insurance claim help",
@@ -134,7 +134,7 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=900&q=70",
         alt: "New architectural shingle roof installed on a ranch home",
-        caption: "Full tear-off & replacement — Pasadena",
+        caption: "Full tear-off & replacement, Pasadena",
       },
       {
         src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=70",
@@ -148,7 +148,7 @@ export const services: Service[] = [
       },
     ],
     faqs: [
-      { q: "Do you handle insurance claims?", a: "Yes — we document damage, meet the adjuster, and only charge your deductible on approved claims." },
+      { q: "Do you handle insurance claims?", a: "Yes, we document damage, meet the adjuster, and only charge your deductible on approved claims." },
       { q: "How long does a replacement take?", a: "Most single-family homes: one day. Larger or steeper roofs: two." },
       { q: "Are you licensed and insured?", a: "CSLB Lic. #1068191. Bonded and insured." },
     ],
@@ -159,12 +159,12 @@ export const services: Service[] = [
     slug: "hvac",
     name: "HVAC",
     category: "Trades",
-    h1: "Same-Day AC Repair in {{city}} — No Overtime Fees",
+    h1: "Same-Day AC Repair in {{city}}. No Overtime Fees.",
     subheadline:
       "EPA-certified techs, upfront flat pricing, and a 100% satisfaction guarantee. Most repairs finished in a single visit.",
     heroImage:
       "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=70",
-    offer: "$59 diagnostic — waived if you book the repair",
+    offer: "$59 diagnostic. Waived if you book the repair.",
     priceRange: "$89 service call – $7,200 full system replacement",
     responseTime: "Same-day appointments until 8pm",
     serviceRadiusMiles: 25,
@@ -225,7 +225,7 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=70",
         alt: "New condenser unit installed beside home",
-        caption: "16 SEER condenser install — Burbank",
+        caption: "16 SEER condenser install, Burbank",
       },
       {
         src: "https://images.unsplash.com/photo-1635048424329-a9bfb146d7aa?auto=format&fit=crop&w=900&q=70",
@@ -250,7 +250,7 @@ export const services: Service[] = [
     slug: "plumbing",
     name: "Plumbing",
     category: "Trades",
-    h1: "24/7 Emergency Plumbers in {{city}} — On Your Street in 60 Min",
+    h1: "24/7 Emergency Plumbers in {{city}}. On Your Street in 60 Min.",
     subheadline:
       "Licensed master plumbers, upfront pricing, no trip charge when we do the work. Drains, leaks, water heaters, repipes.",
     heroImage:
@@ -304,12 +304,12 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=70",
         alt: "Plumber repairing copper supply lines under sink",
-        caption: "Slab leak re-route — Los Angeles",
+        caption: "Slab leak re-route, Los Angeles",
       },
       {
         src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=70",
         alt: "New tankless water heater on garage wall",
-        caption: "Navien tankless install — Torrance",
+        caption: "Navien tankless install, Torrance",
       },
       {
         src: "https://images.unsplash.com/photo-1591588582259-e675bd2e6088?auto=format&fit=crop&w=900&q=70",
@@ -329,7 +329,7 @@ export const services: Service[] = [
     slug: "design-build",
     name: "Design-Build",
     category: "Construction",
-    h1: "Design-Build Contractors in {{city}} — One Team, One Schedule, One Budget",
+    h1: "Design-Build Contractors in {{city}}. One Team, One Schedule, One Budget.",
     subheadline:
       "Architect, designer, and crew under one roof. Fewer change orders, faster timelines, and a single point of accountability from concept to keys.",
     heroImage:
@@ -396,17 +396,17 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=900&q=70",
         alt: "Modern kitchen renovation completed as part of design-build project",
-        caption: "Design-build kitchen + dining expansion — Pasadena",
+        caption: "Design-build kitchen + dining expansion, Pasadena",
       },
       {
         src: "https://images.unsplash.com/photo-1503387837-b154d5074bd2?auto=format&fit=crop&w=900&q=70",
         alt: "ADU under framing construction",
-        caption: "700 sqft detached ADU — Santa Monica",
+        caption: "700 sqft detached ADU, Santa Monica",
       },
       {
         src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=70",
         alt: "Living room rendering beside finished result",
-        caption: "Concept to completion — Beverly Hills",
+        caption: "Concept to completion, Beverly Hills",
       },
     ],
     faqs: [
@@ -421,7 +421,7 @@ export const services: Service[] = [
     slug: "remodeling",
     name: "Remodeling",
     category: "Construction",
-    h1: "Kitchen, Bath & Whole-Home Remodels in {{city}} — Fixed Price, Fixed Schedule",
+    h1: "Kitchen, Bath & Whole-Home Remodels in {{city}}. Fixed Price, Fixed Schedule.",
     subheadline:
       "Kitchens, bathrooms, additions, and load-bearing changes. We pull the permits, handle the inspections, and protect your floors and furniture the whole way through.",
     heroImage:
@@ -449,7 +449,7 @@ export const services: Service[] = [
         label: "Moving or removing any walls?",
         type: "radio",
         options: [
-          { value: "yes", label: "Yes — load-bearing changes" },
+          { value: "yes", label: "Yes, load-bearing changes" },
           { value: "maybe", label: "Maybe, not sure yet" },
           { value: "no", label: "No structural changes" },
         ],
@@ -468,7 +468,7 @@ export const services: Service[] = [
         author: "Meg L.",
         city: "Glendale, CA",
         rating: 5,
-        body: "Took out a load-bearing wall between kitchen and living room. Structural engineer, beam install, and finish work — one crew. Entire process made sense for the first time.",
+        body: "Took out a load-bearing wall between kitchen and living room. Structural engineer, beam install, and finish work. One crew. Entire process made sense for the first time.",
         source: "Google",
         date: "2026-01-22",
       },
@@ -485,12 +485,12 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1556909114-44e3e70034e2?auto=format&fit=crop&w=900&q=70",
         alt: "Renovated kitchen with new cabinetry and countertops",
-        caption: "Full kitchen remodel — Culver City",
+        caption: "Full kitchen remodel, Culver City",
       },
       {
         src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=70",
         alt: "Remodeled primary bathroom with walk-in shower",
-        caption: "Primary bath, down-to-studs — Glendale",
+        caption: "Primary bath, down-to-studs, Glendale",
       },
       {
         src: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=900&q=70",
@@ -499,7 +499,7 @@ export const services: Service[] = [
       },
     ],
     faqs: [
-      { q: "Do you pull the permits?", a: "Always. Permits, inspections, and code compliance are included — you don't talk to LADBS, we do." },
+      { q: "Do you pull the permits?", a: "Always. Permits, inspections, and code compliance are included, you don't talk to LADBS, we do." },
       { q: "Can we live in the house during construction?", a: "For kitchen-only or bath-only: usually yes. For whole-home: we'll tell you honestly before you sign." },
       { q: "What warranty do you offer?", a: "2 years on labor, manufacturer warranties on fixtures and finishes." },
     ],
@@ -510,12 +510,12 @@ export const services: Service[] = [
     slug: "electrical",
     name: "Electrical",
     category: "Trades",
-    h1: "Licensed Electricians in {{city}} — Same-Day Service Calls, Flat-Rate Pricing",
+    h1: "Licensed Electricians in {{city}}. Same-Day Service Calls, Flat-Rate Pricing.",
     subheadline:
-      "Panel upgrades, EV chargers, troubleshooting, rewires. Licensed, bonded and insured, and no markup on parts — you'll see the invoice from the supply house.",
+      "Panel upgrades, EV chargers, troubleshooting, rewires. Licensed, bonded and insured, with no markup on parts. You'll see the invoice from the supply house.",
     heroImage:
       "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1600&q=70",
-    offer: "$59 diagnostic — waived when you approve the repair",
+    offer: "$59 diagnostic. Waived when you approve the repair.",
     priceRange: "$149 service call – $4,800 panel upgrade",
     responseTime: "Same-day appointments until 8pm",
     serviceRadiusMiles: 30,
@@ -565,17 +565,17 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1558618666-0a42876e84e8?auto=format&fit=crop&w=900&q=70",
         alt: "Electrician working on an open electrical panel",
-        caption: "200A panel upgrade with permit — Torrance",
+        caption: "200A panel upgrade with permit, Torrance",
       },
       {
         src: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=900&q=70",
         alt: "EV charger installed on garage wall",
-        caption: "Level 2 EV charger, 60A circuit — Los Angeles",
+        caption: "Level 2 EV charger, 60A circuit, Los Angeles",
       },
       {
         src: "https://images.unsplash.com/photo-1590725140246-20acdee442be?auto=format&fit=crop&w=900&q=70",
         alt: "Electrician testing circuits with multimeter",
-        caption: "Diagnostic + targeted repair — Whittier",
+        caption: "Diagnostic + targeted repair, Whittier",
       },
     ],
     faqs: [
@@ -590,7 +590,7 @@ export const services: Service[] = [
     slug: "framing",
     name: "Framing",
     category: "Construction",
-    h1: "Framing Contractors in {{city}} — Square, Plumb, On-Schedule",
+    h1: "Framing Contractors in {{city}}. Square, Plumb, On-Schedule.",
     subheadline:
       "New construction, second-story additions, and structural reframes by a stable in-house crew. We follow the architect's prints and leave the site broom-clean at shift end.",
     heroImage:
@@ -618,7 +618,7 @@ export const services: Service[] = [
         label: "Do you have architectural plans?",
         type: "radio",
         options: [
-          { value: "stamped", label: "Yes — stamped & permit-ready" },
+          { value: "stamped", label: "Yes, stamped & permit-ready" },
           { value: "draft", label: "Draft plans only" },
           { value: "no", label: "No plans yet" },
         ],
@@ -654,12 +654,12 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1503387837-b154d5074bd2?auto=format&fit=crop&w=900&q=70",
         alt: "New framing lumber installed on second-story addition",
-        caption: "Second-story addition framing — Burbank",
+        caption: "Second-story addition framing, Burbank",
       },
       {
         src: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=900&q=70",
         alt: "ADU framing walls going up on concrete slab",
-        caption: "ADU framing on new slab — Los Angeles",
+        caption: "ADU framing on new slab, Los Angeles",
       },
       {
         src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=70",
@@ -681,7 +681,7 @@ export const services: Service[] = [
     category: "Construction",
     h1: "Custom Cabinets, Flooring, Drywall & Paint in {{city}}",
     subheadline:
-      "The final 20% of a job is what you actually see. Our finish crew installs cabinetry, countertops, flooring, drywall, and paint — then cleans up after themselves.",
+      "The final 20% of a job is what you actually see. Our finish crew installs cabinetry, countertops, flooring, drywall, and paint, then cleans up after themselves.",
     heroImage:
       "https://images.unsplash.com/photo-1556909114-44e3e70034e2?auto=format&fit=crop&w=1600&q=70",
     offer: "Free measure + material allowance estimate",
@@ -744,17 +744,17 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1556909114-44e3e70034e2?auto=format&fit=crop&w=900&q=70",
         alt: "Custom kitchen cabinetry installed",
-        caption: "Custom walnut cabinetry — Santa Monica",
+        caption: "Custom walnut cabinetry, Santa Monica",
       },
       {
         src: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=900&q=70",
         alt: "Engineered hardwood floor installation",
-        caption: "1,800 sqft hardwood install — Inglewood",
+        caption: "1,800 sqft hardwood install, Inglewood",
       },
       {
         src: "https://images.unsplash.com/photo-1562259920-0bac9aad60a9?auto=format&fit=crop&w=900&q=70",
         alt: "Freshly painted interior room",
-        caption: "Full-home interior repaint — Long Beach",
+        caption: "Full-home interior repaint, Long Beach",
       },
     ],
     faqs: [
@@ -771,7 +771,7 @@ export const services: Service[] = [
     category: "Project Services",
     h1: "Interior Designers in {{city}} Who Actually Get It Built",
     subheadline:
-      "Cohesive design plans, vendor management, and on-site coordination — so the room looks like the rendering. Works standalone or in lockstep with our build crew.",
+      "Cohesive design plans, vendor management, and on-site coordination, so the room looks like the rendering. Works standalone or in lockstep with our build crew.",
     heroImage:
       "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1600&q=70",
     offer: "Free 30-minute discovery call + style direction deck",
@@ -801,7 +801,7 @@ export const services: Service[] = [
           { value: "traditional", label: "Traditional / classic" },
           { value: "transitional", label: "Transitional / mix" },
           { value: "coastal", label: "Coastal / California" },
-          { value: "unsure", label: "Not sure — help me pick" },
+          { value: "unsure", label: "Not sure, help me pick" },
         ],
       },
     ],
@@ -835,23 +835,23 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=70",
         alt: "Designed modern living room with curated furniture",
-        caption: "Full-home design + install — Pacific Palisades",
+        caption: "Full-home design + install, Pacific Palisades",
       },
       {
         src: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=70",
         alt: "Styled bedroom with cohesive palette",
-        caption: "Primary suite design — Beverly Hills",
+        caption: "Primary suite design, Beverly Hills",
       },
       {
         src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=70",
         alt: "Modern kitchen design renders alongside completed build",
-        caption: "Kitchen + dining design consult — Culver City",
+        caption: "Kitchen + dining design consult, Culver City",
       },
     ],
     faqs: [
-      { q: "Do you only work on projects you're building?", a: "No — standalone design is our most popular package. If you want us to build it too, we can bundle." },
+      { q: "Do you only work on projects you're building?", a: "No, standalone design is our most popular package. If you want us to build it too, we can bundle." },
       { q: "Who buys the furniture?", a: "Your call. We'll handle procurement and delivery coordination if you want, or hand you a shopping list with direct links." },
-      { q: "Can we see past work?", a: "Yes — full portfolio with addresses on request (NDA for private clients)." },
+      { q: "Can we see past work?", a: "Yes, full portfolio with addresses on request (NDA for private clients)." },
     ],
     trustBadges: ["CSLB #1068191", "Bonded & Insured", "Trade-Only Showroom Access", "5.0★ Average Project"],
     localKeywords: ["interior designer {{city}}", "home design consultant", "kitchen designer near me", "whole home interior design"],
@@ -860,7 +860,7 @@ export const services: Service[] = [
     slug: "site-management",
     name: "Site Management",
     category: "Project Services",
-    h1: "Construction Site Management for {{city}} Projects — So Your Job Doesn't Stall",
+    h1: "Construction Site Management for {{city}} Projects. So Your Job Doesn't Stall.",
     subheadline:
       "Material logistics, on-site safety, subcontractor coordination, and daily clean-up. Plug us in when you're self-managing a build or your GC needs backup.",
     heroImage:
@@ -924,23 +924,23 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=900&q=70",
         alt: "Organized construction site with staged materials",
-        caption: "Daily-managed site — Los Angeles",
+        caption: "Daily-managed site, Los Angeles",
       },
       {
         src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=70",
         alt: "Site super reviewing schedule with subcontractor",
-        caption: "Weekly sub coordination — Pasadena",
+        caption: "Weekly sub coordination, Pasadena",
       },
       {
         src: "https://images.unsplash.com/photo-1591588582259-e675bd2e6088?auto=format&fit=crop&w=900&q=70",
         alt: "Materials neatly staged on pallets",
-        caption: "Just-in-time materials logistics — Santa Monica",
+        caption: "Just-in-time materials logistics, Santa Monica",
       },
     ],
     faqs: [
-      { q: "Do you replace the GC?", a: "Usually no — we supplement. We run the day-to-day on-site while the GC stays accountable for contracts and pricing." },
+      { q: "Do you replace the GC?", a: "Usually no. We supplement the GC by running the day-to-day on-site while they stay accountable for contracts and pricing." },
       { q: "What do you actually do each day?", a: "First-crew check-in, schedule verification, deliveries, safety/PPE audit, progress photos, and a written daily log." },
-      { q: "Can we engage just for crunch weeks?", a: "Yes — short engagements (2–4 weeks) are common for rough-in, inspections, and final push." },
+      { q: "Can we engage just for crunch weeks?", a: "Yes, short engagements (2–4 weeks) are common for rough-in, inspections, and final push." },
     ],
     trustBadges: ["OSHA 30-Certified", "Insured Site Supers", "Daily Written Logs", "Bilingual Crews (EN/ES)"],
     localKeywords: ["construction site management {{city}}", "site supervisor near me", "project site super", "construction logistics"],
@@ -949,9 +949,9 @@ export const services: Service[] = [
     slug: "project-management",
     name: "Project Management",
     category: "Project Services",
-    h1: "Construction Project Managers in {{city}} — One Owner, One Phone Number",
+    h1: "Construction Project Managers in {{city}}. One Owner, One Phone Number.",
     subheadline:
-      "Scope, schedule, and budget — owned by one person who answers your texts. Ideal when you're managing your own architect, multiple trades, or a complex remodel.",
+      "Scope, schedule, and budget, owned by one person who answers your texts. Ideal when you're managing your own architect, multiple trades, or a complex remodel.",
     heroImage:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=70",
     offer: "Free 45-min strategy call + written scope & risk summary",
@@ -1014,7 +1014,7 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=70",
         alt: "Project manager reviewing schedule on laptop",
-        caption: "Pre-construction plan review — Glendale",
+        caption: "Pre-construction plan review, Glendale",
       },
       {
         src: "https://images.unsplash.com/photo-1542621334-a254cf47733d?auto=format&fit=crop&w=900&q=70",
@@ -1024,13 +1024,13 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=70",
         alt: "PM walking site with construction schedule",
-        caption: "Weekly owner's-rep site walk — Long Beach",
+        caption: "Weekly owner's-rep site walk, Long Beach",
       },
     ],
     faqs: [
-      { q: "Are you an owner's representative?", a: "Yes — we represent your interests, not the GC's or the architect's. Our fee is flat or a percentage, not tied to change orders." },
+      { q: "Are you an owner's representative?", a: "Yes, we represent your interests, not the GC's or the architect's. Our fee is flat or a percentage, not tied to change orders." },
       { q: "What do you produce each week?", a: "One written status report, one budget snapshot, one schedule update. Plus ad-hoc texts and calls whenever you need us." },
-      { q: "Do you bid the job for us?", a: "Yes — we qualify GCs, level bids apples-to-apples, and sit in on negotiations." },
+      { q: "Do you bid the job for us?", a: "Yes, we qualify GCs, level bids apples-to-apples, and sit in on negotiations." },
     ],
     trustBadges: ["CSLB #1068191", "Bonded & Insured", "Owner's-Rep Agreements", "Flat-Fee or % Options"],
     localKeywords: ["construction project manager {{city}}", "owners representative near me", "residential construction manager", "home build project management"],
@@ -1039,7 +1039,7 @@ export const services: Service[] = [
     slug: "permits",
     name: "Permit Expediting",
     category: "Project Services",
-    h1: "Permit Expediting in {{city}} — Plans Submitted in 5 Business Days",
+    h1: "Permit Expediting in {{city}}. Plans Submitted in 5 Business Days.",
     subheadline:
       "We file with LADBS and local jurisdictions, schedule inspections, and resolve correction notices. You build, we paperwork.",
     heroImage:
@@ -1090,7 +1090,7 @@ export const services: Service[] = [
         author: "Owen F.",
         city: "Santa Monica, CA",
         rating: 5,
-        body: "ADU permit over the counter in Santa Monica — would've been six weeks solo. They had it in 4 days.",
+        body: "ADU permit over the counter in Santa Monica. Would've been six weeks solo. They had it in 4 days.",
         source: "Google",
         date: "2026-02-03",
       },
@@ -1107,7 +1107,7 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=70",
         alt: "Construction plans stamped with approval seal",
-        caption: "LADBS-approved plans — Los Angeles",
+        caption: "LADBS-approved plans, Los Angeles",
       },
       {
         src: "https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=900&q=70",
@@ -1117,13 +1117,13 @@ export const services: Service[] = [
       {
         src: "https://images.unsplash.com/photo-1542621334-a254cf47733d?auto=format&fit=crop&w=900&q=70",
         alt: "Annotated blueprints with correction notes",
-        caption: "Correction-notice response — Pasadena",
+        caption: "Correction-notice response, Pasadena",
       },
     ],
     faqs: [
-      { q: "How fast is 'fast'?", a: "Over-the-counter permits: 3–5 business days in most LA jurisdictions. Full plan check: we target the 50th percentile review time for that jurisdiction — and reopen when reviewers stall." },
-      { q: "Do you file corrections too?", a: "Yes — correction-response is our most common engagement. Send us your notice and we'll quote in 24 hours." },
-      { q: "What jurisdictions do you cover?", a: "All LA County cities, Orange County, and Ventura. If you're outside those, ask — we probably know someone." },
+      { q: "How fast is 'fast'?", a: "Over-the-counter permits: 3–5 business days in most LA jurisdictions. Full plan check: we target the 50th percentile review time for that jurisdiction, and reopen when reviewers stall." },
+      { q: "Do you file corrections too?", a: "Yes, correction-response is our most common engagement. Send us your notice and we'll quote in 24 hours." },
+      { q: "What jurisdictions do you cover?", a: "All LA County cities, Orange County, and Ventura. If you're outside those, ask, we probably know someone." },
     ],
     trustBadges: ["LADBS On-File Expediter", "Jurisdictional Relationships", "Correction-Response Guarantee", "Flat-Fee Packages"],
     localKeywords: ["permit expediter {{city}}", "LADBS permit help", "building permit services", "permit correction response"],

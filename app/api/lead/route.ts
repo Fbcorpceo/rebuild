@@ -34,7 +34,7 @@ export async function POST(req: Request) {
   }
   const data = parsed.data;
 
-  // honeypot — silently accept & drop
+  // honeypot, silently accept & drop
   if (data.hp) return NextResponse.json({ ok: true });
 
   const service = getService(data.service);

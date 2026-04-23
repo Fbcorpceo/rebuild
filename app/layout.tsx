@@ -8,8 +8,8 @@ import LocalSchema from "@/components/LocalSchema";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.brand} — ${site.tagline}`,
-    template: `%s — ${site.brand}`,
+    default: `${site.brand} · ${site.tagline}`,
+    template: `%s · ${site.brand}`,
   },
   description: site.description,
   applicationName: site.brand,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: site.brand,
     url: site.url,
-    title: `${site.brand} — ${site.tagline}`,
+    title: `${site.brand} · ${site.tagline}`,
     description: site.description,
   },
   twitter: { card: "summary_large_image" },

@@ -43,7 +43,7 @@ export async function sendCustomerEmail(lead: Lead, service: Service): Promise<R
   }
   const html = `
     <div style="font-family:system-ui,sans-serif;max-width:560px;margin:auto">
-      <h2>Thanks, ${escape(lead.name)} — we've got your ${escape(service.name.toLowerCase())} request.</h2>
+      <h2>Thanks, ${escape(lead.name)}. We've got your ${escape(service.name.toLowerCase())} request.</h2>
       <p>${escape(service.responseTime)}. In the meantime, here's what happens next:</p>
       <ol>
         <li>A dispatcher reviews your answers and calls you from ${site.phoneDisplay}.</li>
@@ -70,7 +70,7 @@ export async function sendInternalAlert(lead: Lead, service: Service): Promise<R
   const body = {
     from: TRANSACTIONAL_FROM,
     to: [INTERNAL_INBOX],
-    subject: `[NEW LEAD] ${service.name} — ${lead.name} — ${lead.answers.zip || "?"}`,
+    subject: `[NEW LEAD] ${service.name}, ${lead.name}, ${lead.answers.zip || "?"}`,
     html: `<pre style="font-family:ui-monospace">${escape(JSON.stringify(lead, null, 2))}</pre>`,
   };
   if (!key) {

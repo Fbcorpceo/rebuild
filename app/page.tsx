@@ -4,7 +4,7 @@ import { site } from "@/lib/site";
 import { services, type Service } from "@/lib/services";
 
 export const metadata: Metadata = {
-  title: `${site.brand} — Roofing, HVAC, Plumbing & General Contracting in ${site.primaryCity}`,
+  title: `${site.brand} · Roofing, HVAC, Plumbing & General Contracting in ${site.primaryCity}`,
   description: site.description,
   alternates: { canonical: "/" },
 };
@@ -13,7 +13,7 @@ const CATEGORY_ORDER: Service["category"][] = ["Trades", "Construction", "Projec
 
 const CATEGORY_COPY: Record<Service["category"], { title: string; blurb: string }> = {
   Trades: {
-    title: "Trades — fix it fast",
+    title: "Trades: fix it fast",
     blurb: "Licensed crews for roofing, HVAC, plumbing, and electrical. Same-day or next-morning in most of LA.",
   },
   Construction: {
@@ -22,7 +22,7 @@ const CATEGORY_COPY: Record<Service["category"], { title: string; blurb: string 
   },
   "Project Services": {
     title: "Project Services",
-    blurb: "Interior design, project management, site management, and permit expediting — plug us in where you need help.",
+    blurb: "Interior design, project management, site management, and permit expediting. Plug us in where you need help.",
   },
 };
 
@@ -37,7 +37,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-5 py-16">
         <span className="chip">Local · Licensed · {site.ratings.google.stars}★ ({site.ratings.google.count})</span>
         <h1 className="mt-4 max-w-3xl text-5xl font-black leading-tight tracking-tight text-slate-900">
-          {site.brand} — {site.primaryCity}'s crew for everything from the roof to the remodel.
+          {site.brand}, {site.primaryCity}'s crew for everything from the roof to the remodel.
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-slate-700">{site.description}</p>
         <div className="mt-6 flex flex-wrap gap-3">
