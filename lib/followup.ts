@@ -15,9 +15,9 @@ export type Lead = {
 
 type Result = { ok: true } | { ok: false; error: string };
 
-// Use Resend's onboarding sender until fbcorp.io is verified in Resend.
-// Swap to `hello@${site.domain}` once the domain's SPF/DKIM/DMARC records
-// are live and Resend shows the domain as Verified.
+// Use Resend's onboarding sender until fbcrebuild.com is verified in
+// Resend. Swap to `hello@${site.domain}` once the domain's SPF/DKIM/DMARC
+// records are live and Resend shows it as Verified.
 const TRANSACTIONAL_FROM = `${site.brand} <onboarding@resend.dev>`;
 const INTERNAL_INBOX = process.env.LEAD_INBOX || `dispatch@${site.domain}`;
 

@@ -2,8 +2,8 @@ export const site = {
   brand: "FB Corp",
   legalName: "Foundational Builders Corp",
   productLine: "Rebuild Services",
-  domain: "fbcorp.io",
-  url: "https://www.fbcorp.io",
+  domain: "fbcrebuild.com",
+  url: "https://www.fbcrebuild.com",
   tagline: "Storm restoration & home rebuild specialists.",
   description:
     "FB Corp is a licensed, local restoration contractor handling roofing, HVAC, and plumbing rebuilds across Greater Los Angeles. Free inspections, insurance-claim help, fixed-price quotes.",
