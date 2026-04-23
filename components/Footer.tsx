@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { services } from "@/lib/services";
 import BrandLogo from "./BrandLogo";
 
 export default function Footer() {
@@ -18,9 +19,11 @@ export default function Footer() {
         <div>
           <div className="mb-2 font-semibold text-slate-900">Services</div>
           <ul className="space-y-1 text-slate-600">
-            <li><Link href="/services/roofing" className="hover:text-slate-900">Roofing</Link></li>
-            <li><Link href="/services/hvac" className="hover:text-slate-900">HVAC</Link></li>
-            <li><Link href="/services/plumbing" className="hover:text-slate-900">Plumbing</Link></li>
+            {services.map((s) => (
+              <li key={s.slug}>
+                <Link href={`/services/${s.slug}`} className="hover:text-slate-900">{s.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div>

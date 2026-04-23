@@ -56,7 +56,7 @@ export default async function OG() {
 
         <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
           <div style={{ fontSize: 68, fontWeight: 800, lineHeight: 1.05, maxWidth: 980 }}>
-            {`Roofing, HVAC & Plumbing rebuilds across ${site.primaryCity}.`}
+            {`Trades, remodels, and home care across ${site.primaryCity}.`}
           </div>
           <div style={{ fontSize: 28, fontWeight: 500, opacity: 0.92 }}>
             {"Free 24-hour quote · Licensed & insured · Rated 4.9/5 on Google"}

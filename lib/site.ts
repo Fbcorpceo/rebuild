@@ -6,7 +6,7 @@ export const site = {
   url: "https://www.fbcorp.io",
   tagline: "Storm restoration & home rebuild specialists.",
   description:
-    "FB Corp is a licensed, local restoration contractor handling roofing, HVAC, and plumbing rebuilds across Greater Los Angeles. Free inspections, insurance-claim help, fixed-price quotes.",
+    "FB Corp is a licensed, local contractor handling the trades, remodels, and exterior work that keep Greater Los Angeles homes running — roofing, HVAC, plumbing, electrical, solar, windows, kitchens and more. Free inspections, insurance-claim help, fixed-price quotes.",
   phone: "+1-310-499-8716",
   phoneDisplay: "(310) 499-8716",
   email: "drew@fbcorp.io",

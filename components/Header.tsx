@@ -13,9 +13,10 @@ export default function Header() {
           </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm sm:flex">
+          <Link href="/#services" className="text-slate-700 hover:text-slate-900">All Services</Link>
           <Link href="/services/roofing" className="text-slate-700 hover:text-slate-900">Roofing</Link>
           <Link href="/services/hvac" className="text-slate-700 hover:text-slate-900">HVAC</Link>
-          <Link href="/services/plumbing" className="text-slate-700 hover:text-slate-900">Plumbing</Link>
+          <Link href="/services/kitchen-bath" className="text-slate-700 hover:text-slate-900">Kitchen & Bath</Link>
         </nav>
         <a href={`tel:${site.phone}`} className="btn-primary text-sm">
           Call {site.phoneDisplay}
