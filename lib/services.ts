@@ -82,7 +82,7 @@ export const services: Service[] = [
     subheadline:
       "Storm damage, leaks, or a full replacement. Get a fixed-price quote from a local, insured crew. No high-pressure sales.",
     heroImage:
-      "https://images.unsplash.com/photo-1632759145355-8b8f3ab1b95e?auto=format&fit=crop&w=1600&q=70",
+      "https://images.unsplash.com/photo-1510627489930-0c1b0bfb6785?auto=format&fit=crop&w=1600&q=70",
     offer: "Free 27-point roof inspection + insurance claim help",
     priceRange: "$450 repairs – $18,500 full replacement",
     responseTime: "Callback in under 12 minutes, 7am–9pm",
@@ -563,9 +563,9 @@ export const services: Service[] = [
     ],
     proof: [
       {
-        src: "https://images.unsplash.com/photo-1558618666-0a42876e84e8?auto=format&fit=crop&w=900&q=70",
-        alt: "Electrician working on an open electrical panel",
-        caption: "200A panel upgrade with permit, Torrance",
+        src: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=70",
+        alt: "Electrical rough-in on a new construction deck before concrete pour",
+        caption: "New construction electrical rough-in, Torrance",
       },
       {
         src: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=900&q=70",
@@ -752,8 +752,8 @@ export const services: Service[] = [
         caption: "1,800 sqft hardwood install, Inglewood",
       },
       {
-        src: "https://images.unsplash.com/photo-1562259920-0bac9aad60a9?auto=format&fit=crop&w=900&q=70",
-        alt: "Freshly painted interior room",
+        src: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=70",
+        alt: "Freshly painted bright interior with new cabinetry",
         caption: "Full-home interior repaint, Long Beach",
       },
     ],
