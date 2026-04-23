@@ -4,7 +4,6 @@ import { getService, listServiceSlugs } from "@/lib/services";
 import { site } from "@/lib/site";
 import ServiceHero from "@/components/ServiceHero";
 import TrustBar from "@/components/TrustBar";
-import ProofGallery from "@/components/ProofGallery";
 import Reviews from "@/components/Reviews";
 import FAQ from "@/components/FAQ";
 import LocalSchema from "@/components/LocalSchema";
@@ -43,7 +42,6 @@ export default function ServicePage({ params }: Params) {
       <LocalSchema service={service} />
       <ServiceHero service={service} city={site.primaryCity} />
       <TrustBar badges={service.trustBadges} />
-      <ProofGallery photos={service.proof} />
       <Reviews reviews={service.reviews} />
       <section className="mx-auto max-w-6xl px-5 py-12">
         <h2 className="mb-4 text-2xl font-bold">We're the local crew in {site.primaryCity}</h2>
