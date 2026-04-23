@@ -23,9 +23,12 @@ export type ProofPhoto = {
   caption?: string;
 };
 
+export type ServiceCategory = "Trades" | "Remodeling" | "Exterior" | "Home Care";
+
 export type Service = {
   slug: string;
   name: string;
+  category: ServiceCategory;
   h1: string;
   subheadline: string;
   heroImage: string;
@@ -76,6 +79,7 @@ export const services: Service[] = [
   {
     slug: "roofing",
     name: "Roofing",
+    category: "Trades",
     h1: "Licensed Roofers in {{city}} — Free Inspection in 24 Hours",
     subheadline:
       "Storm damage, leaks, or a full replacement. Get a fixed-price quote from a local, insured crew — no high-pressure sales.",
@@ -156,6 +160,7 @@ export const services: Service[] = [
   {
     slug: "hvac",
     name: "HVAC",
+    category: "Trades",
     h1: "Same-Day AC Repair in {{city}} — No Overtime Fees",
     subheadline:
       "EPA-certified techs, upfront flat pricing, and a 100% satisfaction guarantee. Most repairs finished in a single visit.",
@@ -246,6 +251,7 @@ export const services: Service[] = [
   {
     slug: "plumbing",
     name: "Plumbing",
+    category: "Trades",
     h1: "24/7 Emergency Plumbers in {{city}} — On Your Street in 60 Min",
     subheadline:
       "Licensed master plumbers, upfront pricing, no trip charge when we do the work. Drains, leaks, water heaters, repipes.",
