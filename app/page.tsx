@@ -61,7 +61,13 @@ export default function HomePage() {
                   className="group overflow-hidden rounded-2xl bg-white shadow-card ring-1 ring-slate-100 transition hover:-translate-y-0.5 hover:ring-brand-500"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={s.heroImage} alt="" className="h-40 w-full object-cover" loading="lazy" />
+                  <img
+                    src={s.heroImage}
+                    alt=""
+                    loading="lazy"
+                    style={{ objectPosition: s.heroImagePosition ?? "center" }}
+                    className="h-40 w-full object-cover"
+                  />
                   <div className="p-5">
                     <div className="text-sm font-semibold text-brand-700">{s.name}</div>
                     <div className="mt-1 text-lg font-bold leading-snug text-slate-900">{s.offer}</div>

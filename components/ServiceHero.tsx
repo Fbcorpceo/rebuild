@@ -11,6 +11,7 @@ export default function ServiceHero({ service, city }: { service: Service; city:
         src={service.heroImage}
         alt=""
         aria-hidden="true"
+        style={{ objectPosition: service.heroImagePosition ?? "center" }}
         className="absolute inset-0 h-full w-full object-cover opacity-20"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/85 to-white" />

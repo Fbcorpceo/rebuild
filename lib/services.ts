@@ -30,6 +30,7 @@ export type Service = {
   h1: string;
   subheadline: string;
   heroImage: string;
+  heroImagePosition?: string;
   offer: string;
   priceRange: string;
   responseTime: string;
@@ -163,6 +164,7 @@ export const services: Service[] = [
     subheadline:
       "EPA-certified techs, upfront flat pricing, and a 100% satisfaction guarantee. Most repairs finished in a single visit.",
     heroImage: "/hvac-hero.jpg",
+    heroImagePosition: "center top",
     offer: "$59 diagnostic. Waived if you book the repair.",
     priceRange: "$89 service call – $7,200 full system replacement",
     responseTime: "Same-day appointments until 8pm",
