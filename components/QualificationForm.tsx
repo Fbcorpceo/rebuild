@@ -39,7 +39,18 @@ export default function QualificationForm({ service }: Props) {
     return Boolean(answers[current.id]?.trim());
   }, [current, answers]);
 
-  const contactReady = name.trim().length >= 2 && /^[\d+()\-\s]{7,}$/.test(phone) && /.+@.+\..+/.test(email) && consent;
+  const phoneValid = /^[\d+()\-.\s]{7,}$/.test(phone);
+  const emailValid = /.+@.+\..+/.test(email);
+  const nameValid = name.trim().length >= 2;
+  const contactReady = nameValid && phoneValid && emailValid && consent;
+
+  function contactError(): string | undefined {
+    if (!nameValid) return "Please enter your full name.";
+    if (!phoneValid) return "Please enter a valid phone number.";
+    if (!emailValid) return "Please enter a valid email address.";
+    if (!consent) return "Please check the consent box so we can call or text you back.";
+    return undefined;
+  }
 
   const utm = useMemo(() => {
     if (typeof window === "undefined") return {};
@@ -109,9 +120,15 @@ export default function QualificationForm({ service }: Props) {
         e.preventDefault();
         if (step < service.qualifying.length) {
           if (canContinue) setStep((s) => s + 1);
-        } else if (contactReady) {
-          submit();
+          return;
         }
+        const msg = contactError();
+        if (msg) {
+          setState("error");
+          setError(msg);
+          return;
+        }
+        submit();
       }}
     >
       <div className="mb-4 flex items-center justify-between">
@@ -161,7 +178,7 @@ export default function QualificationForm({ service }: Props) {
             Continue →
           </button>
         ) : (
-          <button type="submit" className="btn-primary" disabled={!contactReady || state === "submitting"}>
+          <button type="submit" className="btn-primary" disabled={state === "submitting"}>
             {state === "submitting" ? "Sending…" : "Get my free quote"}
           </button>
         )}
