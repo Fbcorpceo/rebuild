@@ -86,8 +86,8 @@ export const services: Service[] = [
     heroImage:
       "https://images.unsplash.com/photo-1510627489930-0c1b0bfb6785?auto=format&fit=crop&w=1600&q=70",
     offer: "Free 27-point roof inspection + insurance claim help",
-    priceRange: "$450 repairs – $18,500 full replacement",
-    responseTime: "Callback in under 12 minutes, 7am–9pm",
+    priceRange: "",
+    responseTime: "Same-day callback, 7am–9pm",
     serviceRadiusMiles: 35,
     qualifying: [
       ...commonQualifying,
@@ -139,8 +139,8 @@ export const services: Service[] = [
       "EPA-certified techs, upfront flat pricing, and a 100% satisfaction guarantee. Most repairs finished in a single visit.",
     heroImage: "/hvac-hero.jpg",
     heroImagePosition: "center top",
-    offer: "$59 diagnostic. Waived if you book the repair.",
-    priceRange: "$89 service call – $7,200 full system replacement",
+    offer: "Free diagnostic when you book the repair.",
+    priceRange: "",
     responseTime: "Same-day appointments until 8pm",
     serviceRadiusMiles: 25,
     qualifying: [
@@ -205,8 +205,8 @@ export const services: Service[] = [
       "Licensed master plumbers, upfront pricing, no trip charge when we do the work. Drains, leaks, water heaters, repipes.",
     heroImage:
       "https://images.unsplash.com/photo-1585128792020-803d29415281?auto=format&fit=crop&w=1600&q=70",
-    offer: "Free leak check + $50 off any repair over $300",
-    priceRange: "$129 drain clear – $3,900 tankless water heater",
+    offer: "Free leak check",
+    priceRange: "",
     responseTime: "Dispatched in 60 minutes, 24/7",
     serviceRadiusMiles: 30,
     qualifying: [
@@ -256,7 +256,7 @@ export const services: Service[] = [
     faqs: [
       { q: "Is the trip charge really free?", a: "When you approve any repair, yes. We'll tell you the total before we turn a wrench." },
       { q: "Are you licensed?", a: "CSLB Lic. #1068191. Bonded and insured." },
-      { q: "Financing?", a: "0% for 18 months on approved credit for jobs over $1,000." },
+      { q: "Financing?", a: "0% for 18 months on approved credit for larger jobs." },
     ],
     trustBadges: ["CSLB #1068191", "Bonded & Insured", "24/7 Dispatch", "5.0★ on Google"],
     localKeywords: ["plumber near me", "emergency plumber {{city}}", "water heater repair", "24/7 plumber"],
@@ -271,7 +271,7 @@ export const services: Service[] = [
     heroImage:
       "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1600&q=70",
     offer: "Free 60-minute design consult + budget range in writing",
-    priceRange: "$85k ADU – $1.2M+ whole-home rebuild",
+    priceRange: "",
     responseTime: "First call within 24 hours, scope meeting within a week",
     serviceRadiusMiles: 30,
     qualifying: [
@@ -294,10 +294,10 @@ export const services: Service[] = [
         type: "select",
         required: true,
         options: [
-          { value: "<150", label: "Under $150k" },
-          { value: "150-400", label: "$150k – $400k" },
-          { value: "400-800", label: "$400k – $800k" },
-          { value: "800+", label: "Over $800k" },
+          { value: "<150", label: "Under 150k" },
+          { value: "150-400", label: "150k – 400k" },
+          { value: "400-800", label: "400k – 800k" },
+          { value: "800+", label: "Over 800k" },
           { value: "unsure", label: "Not sure yet" },
         ],
       },
@@ -369,7 +369,7 @@ export const services: Service[] = [
     heroImage:
       "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=1600&q=70",
     offer: "Free in-home scope visit + written estimate in 5 business days",
-    priceRange: "$35k bath – $250k+ whole-home remodel",
+    priceRange: "",
     responseTime: "Call back within 4 business hours",
     serviceRadiusMiles: 30,
     qualifying: [
@@ -463,8 +463,8 @@ export const services: Service[] = [
       "Panel upgrades, EV chargers, troubleshooting, rewires. Licensed, bonded and insured, with no markup on parts. You'll see the invoice from the supply house.",
     heroImage:
       "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1600&q=70",
-    offer: "$59 diagnostic. Waived when you approve the repair.",
-    priceRange: "$149 service call – $4,800 panel upgrade",
+    offer: "Free diagnostic when you approve the repair.",
+    priceRange: "",
     responseTime: "Same-day appointments until 8pm",
     serviceRadiusMiles: 30,
     qualifying: [
@@ -519,7 +519,7 @@ export const services: Service[] = [
     heroImage:
       "https://images.unsplash.com/photo-1503387837-b154d5074bd2?auto=format&fit=crop&w=1600&q=70",
     offer: "Free plan takeoff + fixed-price framing bid",
-    priceRange: "$12/sqft standard – $22/sqft complex roofs & custom details",
+    priceRange: "",
     responseTime: "Bid in 3 business days from plans",
     serviceRadiusMiles: 40,
     qualifying: [
@@ -614,7 +614,7 @@ export const services: Service[] = [
     heroImage:
       "https://images.unsplash.com/photo-1556909114-44e3e70034e2?auto=format&fit=crop&w=1600&q=70",
     offer: "Free measure + material allowance estimate",
-    priceRange: "$3,200 paint-only refresh – $60,000+ full finish package",
+    priceRange: "",
     responseTime: "On-site measure within 5 business days",
     serviceRadiusMiles: 30,
     qualifying: [
@@ -710,7 +710,7 @@ export const services: Service[] = [
     heroImage:
       "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1600&q=70",
     offer: "Free 30-minute discovery call + style direction deck",
-    priceRange: "$150/hr hourly consult – $28,000+ full-home design",
+    priceRange: "",
     responseTime: "Reply within 4 business hours",
     serviceRadiusMiles: 25,
     qualifying: [
@@ -807,7 +807,7 @@ export const services: Service[] = [
     heroImage:
       "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=1600&q=70",
     offer: "Free site walk + 3-page risk & logistics audit",
-    priceRange: "$6,500/mo part-time – $22,000/mo full-time site super",
+    priceRange: "",
     responseTime: "First walk-through within 48 hours",
     serviceRadiusMiles: 40,
     qualifying: [
@@ -902,7 +902,7 @@ export const services: Service[] = [
     heroImage:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=70",
     offer: "Free 45-min strategy call + written scope & risk summary",
-    priceRange: "$8,500 pre-construction planning – 5–8% of total build cost",
+    priceRange: "",
     responseTime: "Scheduled call within 48 hours",
     serviceRadiusMiles: 40,
     qualifying: [
@@ -998,7 +998,7 @@ export const services: Service[] = [
     heroImage:
       "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=70",
     offer: "Free plan review + jurisdiction-specific timeline",
-    priceRange: "$950 over-the-counter – $8,500+ full project expediting",
+    priceRange: "",
     responseTime: "Plan review within 2 business days",
     serviceRadiusMiles: 60,
     qualifying: [

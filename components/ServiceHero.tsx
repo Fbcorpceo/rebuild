@@ -27,9 +27,11 @@ export default function ServiceHero({ service, city }: { service: Service; city:
             <span className="rounded-full bg-accent-500/15 px-3 py-1 text-sm font-semibold text-accent-600">
               {service.offer}
             </span>
-            <span className="rounded-full bg-brand-50 px-3 py-1 text-sm font-medium text-brand-700">
-              {service.priceRange}
-            </span>
+            {service.priceRange && (
+              <span className="rounded-full bg-brand-50 px-3 py-1 text-sm font-medium text-brand-700">
+                {service.priceRange}
+              </span>
+            )}
           </div>
 
           <ul className="mt-6 grid gap-2 text-slate-700 sm:grid-cols-2">

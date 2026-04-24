@@ -15,7 +15,6 @@ export default function LocalSchema({ service }: Props) {
     email: site.email,
     image: `${site.url}/opengraph-image`,
     logo: `${site.url}/logo.svg`,
-    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
       streetAddress: site.address.street,
@@ -52,7 +51,9 @@ export default function LocalSchema({ service }: Props) {
       offers: {
         "@type": "Offer",
         description: service.offer,
-        priceSpecification: { "@type": "PriceSpecification", description: service.priceRange },
+        ...(service.priceRange
+          ? { priceSpecification: { "@type": "PriceSpecification", description: service.priceRange } }
+          : {}),
       },
       url: `${site.url}/services/${service.slug}`,
     });
